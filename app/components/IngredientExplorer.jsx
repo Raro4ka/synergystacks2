@@ -1,7 +1,8 @@
 
 'use client'
 
-import { useEffect, useMemo, useState } from 'react'
+import { useDeferredValue, useEffect, useMemo, useRef, useState } from 'react'
+import { CompareTable } from './CompareTable'
 
 const CATEGORY_LABELS = {
   'amino-acid': 'Amino Acids & Derivatives',
@@ -22,15 +23,18 @@ const EVIDENCE_LABELS = {
   established: 'Established',
   supported: 'Supported',
   emerging: 'Emerging',
+  insufficient: 'Insufficient',
 }
 
 const EVIDENCE_ORDER = {
   established: 0,
   supported: 1,
   emerging: 2,
+  insufficient: 3,
 }
 
-const STORAGE_KEY = 'synergystacks:favorites:v1'
+const STORAGE_KEY = 'synergystacks:preferences:v2'
+const LEGACY_STORAGE_KEY = 'synergystacks:favorites:v1'
 
 function normalize(value) {
   return String(value ?? '')
@@ -64,8 +68,24 @@ export function IngredientExplorer({ ingredients }) {
   const [sort, setSort] = useState('name')
   const [favoritesOnly, setFavoritesOnly] = useState(false)
   const [favorites, setFavorites] = useState([])
+  const [compare, setCompare] = useState([])
+  const deferredQuery = useDeferredValue(query)
   const [filtersOpen, setFiltersOpen] = useState(false)
   const [ready, setReady] = useState(false)
+  const searchInputRef = useRef(null)
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return
+    function handleSlashShortcut(event) {
+      if (event.key !== '/' || event.ctrlKey || event.metaKey || event.altKey) return
+      const target = event.target
+      if (target instanceof HTMLElement && (target.isContentEditable || ['INPUT', 'TEXTAREA', 'SELECT'].includes(target.tagName))) return
+      event.preventDefault()
+      searchInputRef.current?.focus()
+    }
+    window.addEventListener('keydown', handleSlashShortcut)
+    return () => window.removeEventListener('keydown', handleSlashShortcut)
+  }, [])
 
   const entries = useMemo(
     () => Object.entries(ingredients || {}),
@@ -73,32 +93,63 @@ export function IngredientExplorer({ ingredients }) {
   )
 
   useEffect(() => {
+    if (typeof window === 'undefined') return
+    try {
+      const params = new URLSearchParams(window.location.search)
+      setQuery(params.get('q') || '')
+      setCategory(params.get('category') || 'all')
+      setEvidence(params.get('evidence') || 'all')
+      setPrice(params.get('price') || 'all')
+      setSort(params.get('sort') || 'name')
+    } catch {
+      // Invalid URL state should not prevent catalog use.
+    }
     try {
       const saved = window.localStorage.getItem(STORAGE_KEY)
-      const parsed = saved ? JSON.parse(saved) : []
-
-      if (Array.isArray(parsed)) {
-        setFavorites(parsed.filter((item) => typeof item === 'string'))
+      if (saved) {
+        const parsed = JSON.parse(saved)
+        if (Array.isArray(parsed.favorites)) setFavorites(parsed.favorites.filter((x) => typeof x === 'string'))
+        if (Array.isArray(parsed.compare)) setCompare(parsed.compare.filter((x) => typeof x === 'string'))
+      } else {
+        const legacy = window.localStorage.getItem(LEGACY_STORAGE_KEY)
+        const parsedLegacy = legacy ? JSON.parse(legacy) : []
+        if (Array.isArray(parsedLegacy)) setFavorites(parsedLegacy.filter((x) => typeof x === 'string'))
       }
     } catch {
-      // The catalog remains usable when storage is unavailable.
+      // Storage may be unavailable or contain invalid JSON.
     } finally {
       setReady(true)
     }
   }, [])
 
   useEffect(() => {
-    if (!ready) return
+    if (!ready || typeof window === 'undefined') return
+    const timer = window.setTimeout(() => {
+      try {
+        const params = new URLSearchParams(window.location.search)
+        const values = { q: query, category, evidence, price, sort }
+        Object.entries(values).forEach(([key, value]) => {
+          if (!value || value === 'all' || (key === 'sort' && value === 'name')) params.delete(key)
+          else params.set(key, value)
+        })
+        const search = params.toString()
+        const nextUrl = `${window.location.pathname}${search ? `?${search}` : ''}${window.location.hash}`
+        window.history.replaceState(null, '', nextUrl)
+      } catch {
+        // URL state is an enhancement; filters still work without it.
+      }
+    }, 200)
+    return () => window.clearTimeout(timer)
+  }, [query, category, evidence, price, sort, ready])
 
+  useEffect(() => {
+    if (!ready || typeof window === 'undefined') return
     try {
-      window.localStorage.setItem(
-        STORAGE_KEY,
-        JSON.stringify(favorites)
-      )
+      window.localStorage.setItem(STORAGE_KEY, JSON.stringify({ favorites, compare }))
     } catch {
-      // Favorites remain available for the current session.
+      // Preferences remain available for the current session.
     }
-  }, [favorites, ready])
+  }, [favorites, compare, ready])
 
   const categories = useMemo(() => {
     const available = new Set(
@@ -123,7 +174,7 @@ export function IngredientExplorer({ ingredients }) {
   }, [entries])
 
   const filtered = useMemo(() => {
-    const term = normalize(query)
+    const term = normalize(deferredQuery)
 
     const result = entries.filter(([slug, item]) => {
       if (
@@ -195,7 +246,7 @@ export function IngredientExplorer({ ingredients }) {
     return result
   }, [
     entries,
-    query,
+    deferredQuery,
     category,
     evidence,
     price,
@@ -241,6 +292,7 @@ export function IngredientExplorer({ ingredients }) {
           </span>
 
           <input
+            ref={searchInputRef}
             type="search"
             value={query}
             onChange={(event) => setQuery(event.target.value)}
@@ -357,6 +409,16 @@ export function IngredientExplorer({ ingredients }) {
           </span>
         </button>
 
+        <button
+          type="button"
+          className="ix-compare-button"
+          onClick={() => document.getElementById('ix-compare-panel')?.scrollIntoView({ behavior: 'smooth', block: 'nearest' })}
+          disabled={compare.length < 2}
+          title={compare.length < 2 ? 'Select at least 2 ingredients to compare' : 'Jump to comparison table'}
+        >
+          Compare selected ({compare.length}/2)
+        </button>
+
         <div
           className="ix-results"
           aria-live="polite"
@@ -380,7 +442,7 @@ export function IngredientExplorer({ ingredients }) {
       </div>
 
       {filtered.length > 0 ? (
-        <div className="ix-grid">
+        <div className="ix-grid" id="ingredient-results">
           {filtered.map(([slug, ingredient]) => {
             const isFavorite = favorites.includes(slug)
             const level = ingredient.evidenceLevel || 'unrated'
@@ -449,6 +511,15 @@ export function IngredientExplorer({ ingredients }) {
                     <span className="ix-evidence-dot" />
                     {EVIDENCE_LABELS[level] || 'Not rated'}
                   </span>
+                  <label className="ix-compare-select">
+                    <input
+                      type="checkbox"
+                      checked={compare.includes(slug)}
+                      onChange={() => setCompare((current) => current.includes(slug) ? current.filter((item) => item !== slug) : current.length < 4 ? [...current, slug] : current)}
+                      aria-label={`Select ${ingredient.label} for comparison`}
+                    />
+                    Compare
+                  </label>
 
                   <div className="ix-meta">
                     {forms.length > 0 && (
@@ -488,6 +559,16 @@ export function IngredientExplorer({ ingredients }) {
             Clear all filters
           </button>
         </div>
+      )}
+
+      {compare.length >= 2 && (
+        <section className="ix-compare-panel" id="ix-compare-panel" aria-labelledby="ix-compare-title">
+          <div className="ix-compare-items">
+            <h2 id="ix-compare-title">Compare ingredients</h2>
+            <button type="button" className="ix-reset" onClick={() => setCompare([])}>Clear comparison</button>
+          </div>
+          <CompareTable ingredients={compare.map((slug) => ({ slug, ...ingredients[slug] })).filter((item) => item.label)} />
+        </section>
       )}
 
       <p className="ix-disclaimer">

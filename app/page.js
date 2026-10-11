@@ -1,4 +1,15 @@
 import { Reveal, Counter, ParallaxVisual, SpotlightCard, FAQ } from './components/ClientUI'
+import { stacks } from './data/stacks'
+import { ingredients } from './data/ingredients'
+import { mechanisms } from './data/mechanisms'
+import { biomarkers } from './data/biomarkers'
+
+const stats = {
+  ingredients: Object.keys(ingredients).length,
+  stacks: Object.keys(stacks).length,
+  pathways: Object.keys(mechanisms).length,
+  biomarkers: Object.keys(biomarkers).length,
+}
 
 const homeFaq = [
   {
@@ -15,6 +26,10 @@ const homeFaq = [
       '<strong>Grade B</strong> — human data exists but is limited, or the mechanism is well-established but clinical outcomes are still being measured.',
       '<strong>Grade C</strong> — some evidence supports the effect, but results are inconsistent.'
     ]
+  },
+  {
+    q: 'Why is no stack Grade A?',
+    a: ['We only assign A when there are multiple RCTs on the combination itself. There are none yet; the closest is creatine×fenugreek (Grade B, one RCT).']
   },
   {
     q: 'Do you earn money from this site?',
@@ -47,16 +62,16 @@ export default function HomePage() {
               </p>
               <div className="hero-meta">
                 <div className="stat">
-                  <div className="num"><Counter to={25} /></div>
-                  <div className="lbl">STUDIES CITED</div>
+                  <div className="num"><Counter to={stats.ingredients} /></div>
+                  <div className="lbl">INGREDIENTS</div>
                 </div>
                 <div className="stat">
-                  <div className="num"><Counter to={5} /></div>
-                  <div className="lbl">SYNERGY PAIRS</div>
+                  <div className="num"><Counter to={stats.stacks} /></div>
+                  <div className="lbl">STACKS</div>
                 </div>
                 <div className="stat">
-                  <div className="num"><Counter to={4} /></div>
-                  <div className="lbl">CATEGORIES</div>
+                  <div className="num"><Counter to={stats.pathways} /></div>
+                  <div className="lbl">PATHWAYS</div>
                 </div>
               </div>
             </div>
@@ -83,65 +98,25 @@ export default function HomePage() {
           </Reveal>
 
           <div className="stacks-grid">
-            <Reveal delay={0}>
-              <a className="stack-card" href="/stack/carnitine-caffeine">
-                <div className="cat">WEIGHT LOSS</div>
-                <div className="formula">L-CARNITINE <em>×</em> CAFFEINE</div>
-                <p className="desc">
-                  Caffeine stimulates muscle carnitine retention. Carnitine delivers
-                  fatty acids to mitochondria. Two pathways, one result.
-                </p>
-                <span className="evidence">GRADE A · HUMAN RCT</span>
-              </a>
-            </Reveal>
-
-            <Reveal delay={80}>
-              <a className="stack-card" href="/stack/creatine-fenugreek">
-                <div className="cat">PERFORMANCE</div>
-                <div className="formula">CREATINE <em>×</em> FENUGREEK</div>
-                <p className="desc">
-                  Fenugreek acts as an insulin mimetic, enhancing creatine uptake
-                  without the 70 g of dextrose. Same results, less sugar.
-                </p>
-                <span className="evidence">GRADE A · HUMAN RCT</span>
-              </a>
-            </Reveal>
-
-            <Reveal delay={160}>
-              <a className="stack-card" href="/stack/berberine-chromium">
-                <div className="cat">METABOLIC</div>
-                <div className="formula">BERBERINE <em>×</em> CHROMIUM</div>
-                <p className="desc">
-                  AMPK activation meets insulin signaling enhancement.
-                  −2.35 kg fat mass and +28% insulin sensitivity in 12 weeks.
-                </p>
-                <span className="evidence">GRADE A · HUMAN RCT</span>
-              </a>
-            </Reveal>
-
-            <Reveal delay={0}>
-              <a className="stack-card" href="/stack/cistanche-eurycoma">
-                <div className="cat">TESTOSTERONE</div>
-                <div className="formula">CISTANCHE <em>×</em> EURYCOMA</div>
-                <p className="desc">
-                  GnRH &amp; aromatase — mechanism preview. Animal data only.
-                  Anecdotal bloodwork suggests potential, but human RCT pending.
-                </p>
-                <span className="evidence grade-b">GRADE B · ANIMAL + MECHANISTIC</span>
-              </a>
-            </Reveal>
-
-            <Reveal delay={80}>
-              <div className="stack-card" style={{ opacity: 0.55, cursor: 'default' }}>
-                <div className="cat">PERFORMANCE</div>
-                <div className="formula">BETA-ALANINE <em>×</em> BICARB</div>
-                <p className="desc">
-                  Beta-alanine buffers H+ inside the muscle. Bicarbonate buffers
-                  H+ outside. Together they cover both compartments.
-                </p>
-                <span className="evidence grade-b">GRADE B · COMING SOON</span>
-              </div>
-            </Reveal>
+            {['carnitine-caffeine', 'creatine-fenugreek', 'berberine-chromium', 'cistanche-eurycoma'].map((slug, index) => {
+              const s = stacks[slug]
+              if (!s) return null
+              const plainDescription = String(s.hero?.copy || '')
+                .replace(/<[^>]*>/g, ' ')
+                .replace(/&amp;/g, '&')
+                .replace(/\s+/g, ' ')
+                .trim()
+              return (
+                <Reveal key={slug} delay={index * 80}>
+                  <a className="stack-card" href={`/stack/${slug}`}>
+                    <div className="cat">{s.kicker?.split('·')[0]?.trim() || 'COMBINATION'}</div>
+                    <div className="formula" dangerouslySetInnerHTML={{ __html: s.synergy?.result || s.metaTitle || s.title || slug }} />
+                    <p className="desc">{plainDescription.length > 140 ? `${plainDescription.slice(0, 137)}…` : plainDescription}</p>
+                    <span className={`evidence grade-${s.evidence?.grade || 'c'}`}>{s.evidence?.label || 'Evidence not yet classified'}</span>
+                  </a>
+                </Reveal>
+              )
+            })}
           </div>
         </div>
       </section>
@@ -154,19 +129,24 @@ export default function HomePage() {
           <Reveal delay={80}>
             <div className="method-grid">
               <div className="method-card">
-                <div className="grade a">GRADE A</div>
-                <h4>Human RCT or meta-analysis</h4>
-                <p>Multiple randomized controlled trials or a meta-analysis confirm the combination effect. Mechanism is understood.</p>
+                <div className="grade a">ESTABLISHED</div>
+                <h4>Substantial human evidence</h4>
+                <p>Substantial human evidence for at least some outcomes.</p>
               </div>
               <div className="method-card">
-                <div className="grade b">GRADE B</div>
-                <h4>Strong mechanistic signal</h4>
-                <p>Human data exists but is limited (small n, single study), or mechanism is well-established but clinical outcomes still being measured.</p>
+                <div className="grade b">SUPPORTED</div>
+                <h4>Useful, more limited evidence</h4>
+                <p>Useful but more limited or indirect evidence.</p>
               </div>
               <div className="method-card">
-                <div className="grade c">GRADE C</div>
-                <h4>Emerging or mixed</h4>
-                <p>Some evidence supports the combination, but results are inconsistent or populations are narrow. Worth watching.</p>
+                <div className="grade c">EMERGING</div>
+                <h4>Preliminary or mixed</h4>
+                <p>Preliminary, mixed or mechanistic/preclinical evidence.</p>
+              </div>
+              <div className="method-card">
+                <div className="grade c">INSUFFICIENT</div>
+                <h4>Not enough evidence</h4>
+                <p>Not enough evidence to classify.</p>
               </div>
             </div>
           </Reveal>

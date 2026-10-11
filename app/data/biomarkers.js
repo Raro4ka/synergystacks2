@@ -1,6 +1,5 @@
-/* SynergyStacks expanded biomarker and outcome reference.
- * Ranges are not hardcoded because laboratory intervals and clinical context vary.
- */
+/* SynergyStacks biomarker reference — expanded editorial draft. */
+
 export const biomarkers = {
   "attention-score": {
     "label": "Attention Test Score",
@@ -9,9 +8,9 @@ export const biomarkers = {
     "unit": "test-specific",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Attention Test Score is a measurable outcome. Reference intervals and clinical meaning depend on the testing method and context.",
+    "description": "Attention-test scores quantify performance on a specified attention or vigilance task. Reaction time, omission errors, commission errors and task difficulty can all contribute to the final score, so results should be interpreted against the exact test used.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as test-specific.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "memory-score": {
     "label": "Memory Test Score",
@@ -20,9 +19,9 @@ export const biomarkers = {
     "unit": "test-specific",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Memory Test Score is a measurable outcome. Reference intervals and clinical meaning depend on the testing method and context.",
+    "description": "Memory-test scores quantify performance on a particular memory task. Because different tests measure encoding, recall, recognition or working memory, the test name and protocol are essential to interpretation.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as test-specific.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "hrv": {
     "label": "Heart Rate Variability",
@@ -31,9 +30,9 @@ export const biomarkers = {
     "unit": "device metric",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Heart Rate Variability is a measurable outcome. Reference intervals and clinical meaning depend on the testing method and context.",
+    "description": "Heart-rate variability describes beat-to-beat variation in cardiac intervals. It is influenced by autonomic regulation, respiration, sleep, training load, illness and measurement conditions; trends under standardized conditions are generally more informative than isolated values.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as device metric.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "ldl": {
     "label": "LDL Cholesterol",
@@ -42,9 +41,9 @@ export const biomarkers = {
     "unit": "mg/dL",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "LDL Cholesterol is a measurable outcome. Reference intervals and clinical meaning depend on the testing method and context.",
+    "description": "LDL cholesterol is the cholesterol carried mainly in low-density lipoprotein particles. It is a major lipid marker used to estimate atherogenic lipoprotein burden; interpretation is stronger when considered with non-HDL cholesterol, ApoB, triglycerides and overall cardiovascular risk.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as mg/dL.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "hdl": {
     "label": "HDL Cholesterol",
@@ -53,9 +52,9 @@ export const biomarkers = {
     "unit": "mg/dL",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "HDL Cholesterol is a measurable outcome. Reference intervals and clinical meaning depend on the testing method and context.",
+    "description": "HDL cholesterol measures cholesterol contained in high-density lipoprotein particles. It reflects part of the reverse-lipid-transport system, but the concentration itself is not a simple “higher is always better” treatment target; particle function and the rest of the lipid profile matter.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as mg/dL.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "blood-pressure-diastolic": {
     "label": "Diastolic Blood Pressure",
@@ -64,9 +63,9 @@ export const biomarkers = {
     "unit": "mmHg",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Diastolic Blood Pressure is a measurable outcome. Reference intervals and clinical meaning depend on the testing method and context.",
+    "description": "Diastolic blood pressure is the arterial pressure during ventricular relaxation. It is influenced strongly by systemic vascular resistance, heart rate and arterial compliance and can change independently of systolic pressure.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as mmHg.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "blood-pressure-systolic": {
     "label": "Systolic Blood Pressure",
@@ -75,9 +74,9 @@ export const biomarkers = {
     "unit": "mmHg",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Systolic Blood Pressure is a measurable outcome. Reference intervals and clinical meaning depend on the testing method and context.",
+    "description": "Systolic blood pressure is the peak arterial pressure reached during ventricular contraction. It reflects cardiac output and arterial properties and is influenced by age, vascular stiffness, autonomic tone, volume status and measurement conditions.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as mmHg.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "il-6": {
     "label": "Interleukin-6",
@@ -86,9 +85,9 @@ export const biomarkers = {
     "unit": "pg/mL",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Interleukin-6 is a measurable outcome. Reference intervals and clinical meaning depend on the testing method and context.",
+    "description": "Interleukin-6 is a cytokine with both immune and metabolic functions. It participates in acute-phase signaling, hepatic protein production, hematopoietic responses and communication between immune, adipose, muscle and other tissues.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as pg/mL.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "crp": {
     "label": "C-Reactive Protein",
@@ -97,9 +96,9 @@ export const biomarkers = {
     "unit": "mg/L",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "C-Reactive Protein is a measurable outcome. Reference intervals and clinical meaning depend on the testing method and context.",
+    "description": "C-reactive protein is an acute-phase protein produced predominantly by the liver in response to inflammatory signaling. High-sensitivity CRP is commonly used as a low-grade systemic inflammation marker, while conventional CRP is often used to follow more pronounced inflammatory states.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as mg/L.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "one-rm": {
     "label": "One-Rep Max",
@@ -108,9 +107,9 @@ export const biomarkers = {
     "unit": "kg",
     "direction": "higher-better",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "One-Rep Max is a measurable outcome. Reference intervals and clinical meaning depend on the testing method and context.",
+    "description": "One-repetition maximum is the heaviest load that can be lifted once with acceptable technique in a defined exercise. It is a functional performance outcome rather than a blood biomarker and is commonly used to quantify maximal strength.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as higher better and records the measurement unit as kg.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "lean-mass": {
     "label": "Lean Body Mass",
@@ -119,9 +118,9 @@ export const biomarkers = {
     "unit": "kg",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Lean Body Mass is a measurable outcome. Reference intervals and clinical meaning depend on the testing method and context.",
+    "description": "Lean body mass represents body mass excluding stored fat, but the exact definition varies by measurement method. It includes water, muscle, organs, connective tissue and other non-adipose components, making hydration an important source of short-term variation.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as kg.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "body-fat": {
     "label": "Body Fat Percentage",
@@ -130,9 +129,9 @@ export const biomarkers = {
     "unit": "%",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Body Fat Percentage is a measurable outcome. Reference intervals and clinical meaning depend on the testing method and context.",
+    "description": "Body-fat percentage estimates the proportion of total body mass made up of adipose tissue. Methods such as DXA, bioimpedance and skinfolds estimate it differently, so values are best compared using the same method over time.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as %.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "t4-free": {
     "label": "Free T4",
@@ -141,9 +140,9 @@ export const biomarkers = {
     "unit": "ng/dL",
     "direction": "target-range",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Free T4 is a measurable outcome. Reference intervals and clinical meaning depend on the testing method and context.",
+    "description": "Free T4 is an endocrine measurement used to characterize hormone production, transport, signaling or feedback. Concentrations vary with circadian timing, age, sex, binding proteins, nutritional state and the physiological or pharmacological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as target range and records the measurement unit as ng/dL.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "t3-free": {
     "label": "Free T3",
@@ -152,9 +151,9 @@ export const biomarkers = {
     "unit": "pg/mL",
     "direction": "target-range",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Free T3 is a measurable outcome. Reference intervals and clinical meaning depend on the testing method and context.",
+    "description": "Free T3 is an endocrine measurement used to characterize hormone production, transport, signaling or feedback. Concentrations vary with circadian timing, age, sex, binding proteins, nutritional state and the physiological or pharmacological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as target range and records the measurement unit as pg/mL.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "igf1": {
     "label": "IGF-1",
@@ -163,9 +162,9 @@ export const biomarkers = {
     "unit": "ng/mL",
     "direction": "target-range",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "IGF-1 is a measurable outcome. Reference intervals and clinical meaning depend on the testing method and context.",
+    "description": "IGF-1 is a peptide hormone produced largely by the liver in response to growth-hormone signaling. It mediates many growth-related effects and is influenced by age, nutrition, liver function and endocrine status.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as target range and records the measurement unit as ng/mL.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "dheas": {
     "label": "DHEA-S",
@@ -174,9 +173,9 @@ export const biomarkers = {
     "unit": "µg/dL",
     "direction": "target-range",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "DHEA-S is a measurable outcome. Reference intervals and clinical meaning depend on the testing method and context.",
+    "description": "DHEA-S is the sulfated circulating form of dehydroepiandrosterone. It is produced mainly by the adrenal cortex and serves as a relatively stable marker of adrenal androgen precursor production.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as target range and records the measurement unit as µg/dL.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "psa": {
     "label": "Prostate-Specific Antigen",
@@ -185,9 +184,9 @@ export const biomarkers = {
     "unit": "ng/mL",
     "direction": "target-range",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Prostate-Specific Antigen is a measurable outcome. Reference intervals and clinical meaning depend on the testing method and context.",
+    "description": "Prostate-Specific Antigen is a measurable biological variable used to characterize hormonal physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as target range and records the measurement unit as ng/mL.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "total-testosterone": {
     "label": "Total Testosterone",
@@ -196,9 +195,9 @@ export const biomarkers = {
     "unit": "ng/dL",
     "direction": "target-range",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Total Testosterone is a measurable outcome. Reference intervals and clinical meaning depend on the testing method and context.",
+    "description": "Total testosterone is the concentration of testosterone in serum, including both protein-bound and free fractions. It is influenced by production in the testes or adrenals, binding proteins such as SHBG and albumin, and metabolic clearance.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as target range and records the measurement unit as ng/dL.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "free-testosterone": {
     "label": "Free Testosterone",
@@ -207,9 +206,9 @@ export const biomarkers = {
     "unit": "pg/mL",
     "direction": "target-range",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Free Testosterone is a measurable outcome. Reference intervals and clinical meaning depend on the testing method and context.",
+    "description": "Free testosterone is the fraction of circulating testosterone not tightly bound to plasma proteins. It is often considered alongside total testosterone and SHBG because changes in binding proteins can alter free hormone availability without the same change in total testosterone.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as target range and records the measurement unit as pg/mL.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "bioavailable-testosterone": {
     "label": "Bioavailable Testosterone",
@@ -218,9 +217,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Bioavailable Testosterone is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Bioavailable Testosterone is an endocrine measurement used to characterize hormone production, transport, signaling or feedback. Concentrations vary with circadian timing, age, sex, binding proteins, nutritional state and the physiological or pharmacological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "dht": {
     "label": "DHT",
@@ -229,9 +228,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "DHT is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "DHT is a measurable biological variable used to characterize hormonal physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "estradiol": {
     "label": "Estradiol (E2)",
@@ -240,9 +239,9 @@ export const biomarkers = {
     "unit": "pg/mL",
     "direction": "target-range",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Estradiol (E2) is a measurable outcome. Reference intervals and clinical meaning depend on the testing method and context.",
+    "description": "Estradiol (E2) is a measurable biological variable used to characterize hormonal physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as target range and records the measurement unit as pg/mL.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "progesterone": {
     "label": "Progesterone",
@@ -251,9 +250,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Progesterone is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Progesterone is an endocrine measurement used to characterize hormone production, transport, signaling or feedback. Concentrations vary with circadian timing, age, sex, binding proteins, nutritional state and the physiological or pharmacological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "shbg": {
     "label": "Sex Hormone-Binding Globulin",
@@ -262,9 +261,9 @@ export const biomarkers = {
     "unit": "nmol/L",
     "direction": "target-range",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Sex Hormone-Binding Globulin is a measurable outcome. Reference intervals and clinical meaning depend on the testing method and context.",
+    "description": "Sex Hormone-Binding Globulin is a measurable biological variable used to characterize hormonal physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as target range and records the measurement unit as nmol/L.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "lh": {
     "label": "Luteinizing Hormone",
@@ -273,9 +272,9 @@ export const biomarkers = {
     "unit": "mIU/mL",
     "direction": "target-range",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Luteinizing Hormone is a measurable outcome. Reference intervals and clinical meaning depend on the testing method and context.",
+    "description": "Luteinizing hormone is a pituitary gonadotropin that regulates gonadal steroidogenesis. In men it stimulates Leydig cells to produce testosterone; in women it participates in follicular maturation, ovulation and corpus-luteum function.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as target range and records the measurement unit as mIU/mL.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "fsh": {
     "label": "Follicle-Stimulating Hormone",
@@ -284,9 +283,9 @@ export const biomarkers = {
     "unit": "mIU/mL",
     "direction": "target-range",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Follicle-Stimulating Hormone is a measurable outcome. Reference intervals and clinical meaning depend on the testing method and context.",
+    "description": "Follicle-Stimulating Hormone is a measurable biological variable used to characterize hormonal physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as target range and records the measurement unit as mIU/mL.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "prolactin": {
     "label": "Prolactin",
@@ -295,20 +294,9 @@ export const biomarkers = {
     "unit": "ng/mL",
     "direction": "target-range",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Prolactin is a measurable outcome. Reference intervals and clinical meaning depend on the testing method and context.",
+    "description": "Prolactin is a measurable biological variable used to characterize hormonal physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as target range and records the measurement unit as ng/mL.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
-  },
-  "dhea-s": {
-    "label": "DHEA-S",
-    "short": "DHEA-S",
-    "category": "hormonal",
-    "unit": "assay- or protocol-dependent",
-    "direction": "context-dependent",
-    "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "DHEA-S is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
-    "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "cortisol": {
     "label": "Cortisol",
@@ -317,9 +305,9 @@ export const biomarkers = {
     "unit": "assay-dependent",
     "direction": "target-range",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Cortisol is a measurable outcome. Reference intervals and clinical meaning depend on the testing method and context.",
+    "description": "Cortisol is the principal glucocorticoid produced by the adrenal cortex. It follows a strong circadian rhythm and changes with stress, sleep, illness, energy availability and many medications, so timing is essential when interpreting a measurement.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as target range and records the measurement unit as assay-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "acth": {
     "label": "ACTH",
@@ -328,9 +316,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "ACTH is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "ACTH is a measurable biological variable used to characterize hormonal physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "aldosterone": {
     "label": "Aldosterone",
@@ -339,9 +327,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Aldosterone is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Aldosterone is a measurable biological variable used to characterize hormonal physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "renin": {
     "label": "Renin",
@@ -350,9 +338,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Renin is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Renin is a measurable biological variable used to characterize hormonal physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "tsh": {
     "label": "TSH",
@@ -361,31 +349,9 @@ export const biomarkers = {
     "unit": "mIU/L",
     "direction": "target-range",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "TSH is a measurable outcome. Reference intervals and clinical meaning depend on the testing method and context.",
+    "description": "TSH is an endocrine measurement used to characterize hormone production, transport, signaling or feedback. Concentrations vary with circadian timing, age, sex, binding proteins, nutritional state and the physiological or pharmacological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as target range and records the measurement unit as mIU/L.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
-  },
-  "free-t3": {
-    "label": "Free T3",
-    "short": "Free T3",
-    "category": "hormonal",
-    "unit": "assay- or protocol-dependent",
-    "direction": "context-dependent",
-    "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Free T3 is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
-    "sources": [],
-    "reviewStatus": "needs-review"
-  },
-  "free-t4": {
-    "label": "Free T4",
-    "short": "Free T4",
-    "category": "hormonal",
-    "unit": "assay- or protocol-dependent",
-    "direction": "context-dependent",
-    "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Free T4 is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
-    "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "reverse-t3": {
     "label": "Reverse T3",
@@ -394,9 +360,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Reverse T3 is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Reverse T3 is an endocrine measurement used to characterize hormone production, transport, signaling or feedback. Concentrations vary with circadian timing, age, sex, binding proteins, nutritional state and the physiological or pharmacological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "thyroglobulin": {
     "label": "Thyroglobulin",
@@ -405,9 +371,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Thyroglobulin is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Thyroglobulin is a measurable biological variable used to characterize hormonal physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "tpo-antibodies": {
     "label": "TPO Antibodies",
@@ -416,9 +382,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "TPO Antibodies is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "TPO Antibodies is a measurable biological variable used to characterize hormonal physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "tsh-receptor-antibodies": {
     "label": "TSH Receptor Antibodies",
@@ -427,20 +393,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "TSH Receptor Antibodies is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "TSH Receptor Antibodies is an endocrine measurement used to characterize hormone production, transport, signaling or feedback. Concentrations vary with circadian timing, age, sex, binding proteins, nutritional state and the physiological or pharmacological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
-  },
-  "igf-1": {
-    "label": "IGF-1",
-    "short": "IGF-1",
-    "category": "hormonal",
-    "unit": "assay- or protocol-dependent",
-    "direction": "context-dependent",
-    "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "IGF-1 is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
-    "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "igfbp-3": {
     "label": "IGFBP-3",
@@ -449,9 +404,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "IGFBP-3 is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "IGFBP-3 is an endocrine measurement used to characterize hormone production, transport, signaling or feedback. Concentrations vary with circadian timing, age, sex, binding proteins, nutritional state and the physiological or pharmacological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "growth-hormone": {
     "label": "Growth Hormone",
@@ -460,9 +415,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Growth Hormone is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Growth Hormone is an endocrine measurement used to characterize hormone production, transport, signaling or feedback. Concentrations vary with circadian timing, age, sex, binding proteins, nutritional state and the physiological or pharmacological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "amh": {
     "label": "AMH",
@@ -471,9 +426,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "AMH is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "AMH is a measurable biological variable used to characterize hormonal physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "melatonin": {
     "label": "Melatonin",
@@ -482,9 +437,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Melatonin is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Melatonin is a measurable biological variable used to characterize hormonal physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "salivary-cortisol": {
     "label": "Salivary Cortisol",
@@ -493,9 +448,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Salivary Cortisol is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Salivary Cortisol is an endocrine measurement used to characterize hormone production, transport, signaling or feedback. Concentrations vary with circadian timing, age, sex, binding proteins, nutritional state and the physiological or pharmacological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "urinary-free-cortisol": {
     "label": "Urinary Free Cortisol",
@@ -504,9 +459,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Urinary Free Cortisol is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Urinary Free Cortisol is an endocrine measurement used to characterize hormone production, transport, signaling or feedback. Concentrations vary with circadian timing, age, sex, binding proteins, nutritional state and the physiological or pharmacological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "cortisol-awakening-response": {
     "label": "Cortisol Awakening Response",
@@ -515,9 +470,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Cortisol Awakening Response is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Cortisol Awakening Response is an endocrine measurement used to characterize hormone production, transport, signaling or feedback. Concentrations vary with circadian timing, age, sex, binding proteins, nutritional state and the physiological or pharmacological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "diurnal-cortisol-slope": {
     "label": "Diurnal Cortisol Slope",
@@ -526,9 +481,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Diurnal Cortisol Slope is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Diurnal Cortisol Slope is an endocrine measurement used to characterize hormone production, transport, signaling or feedback. Concentrations vary with circadian timing, age, sex, binding proteins, nutritional state and the physiological or pharmacological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "plasma-metanephrines": {
     "label": "Plasma Metanephrines",
@@ -537,9 +492,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Plasma Metanephrines is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Plasma Metanephrines is a measurable biological variable used to characterize hormonal physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "epinephrine": {
     "label": "Epinephrine",
@@ -548,9 +503,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Epinephrine is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Epinephrine is a measurable biological variable used to characterize hormonal physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "norepinephrine": {
     "label": "Norepinephrine",
@@ -559,9 +514,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Norepinephrine is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Norepinephrine is a measurable biological variable used to characterize hormonal physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "leptin": {
     "label": "Leptin",
@@ -570,9 +525,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Leptin is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Leptin is a measurable biological variable used to characterize hormonal physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "adiponectin": {
     "label": "Adiponectin",
@@ -581,9 +536,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Adiponectin is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Adiponectin is a measurable biological variable used to characterize hormonal physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "ghrelin": {
     "label": "Ghrelin",
@@ -592,9 +547,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Ghrelin is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Ghrelin is a measurable biological variable used to characterize hormonal physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "fgf21": {
     "label": "FGF21",
@@ -603,9 +558,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "FGF21 is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "FGF21 is a measurable biological variable used to characterize hormonal physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "fgf23": {
     "label": "FGF23",
@@ -614,9 +569,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "FGF23 is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "FGF23 is a measurable biological variable used to characterize hormonal physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "pth": {
     "label": "PTH",
@@ -625,9 +580,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "PTH is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "PTH is a marker of mineral metabolism or skeletal physiology. It can reflect bone turnover, mineral availability, endocrine control or the structural properties of bone depending on the measurement method.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "calcitonin": {
     "label": "Calcitonin",
@@ -636,9 +591,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Calcitonin is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Calcitonin is a measurable biological variable used to characterize hormonal physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "oxytocin": {
     "label": "Oxytocin",
@@ -647,9 +602,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Oxytocin is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Oxytocin is a measurable biological variable used to characterize hormonal physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "vasopressin": {
     "label": "Vasopressin",
@@ -658,9 +613,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Vasopressin is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Vasopressin is a measurable biological variable used to characterize hormonal physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "free-androgen-index": {
     "label": "Free Androgen Index",
@@ -669,9 +624,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Free Androgen Index is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Free Androgen Index is a measurable biological variable used to characterize hormonal physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "testosterone-estradiol-ratio": {
     "label": "Testosterone/Estradiol Ratio",
@@ -680,9 +635,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Testosterone/Estradiol Ratio is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Testosterone/Estradiol Ratio is an endocrine measurement used to characterize hormone production, transport, signaling or feedback. Concentrations vary with circadian timing, age, sex, binding proteins, nutritional state and the physiological or pharmacological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "aldosterone-renin-ratio": {
     "label": "Aldosterone/Renin Ratio",
@@ -691,9 +646,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Aldosterone/Renin Ratio is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Aldosterone/Renin Ratio is a measurable biological variable used to characterize hormonal physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "cortisol-binding-globulin": {
     "label": "Cortisol-Binding Globulin",
@@ -702,9 +657,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Cortisol-Binding Globulin is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Cortisol-Binding Globulin is an endocrine measurement used to characterize hormone production, transport, signaling or feedback. Concentrations vary with circadian timing, age, sex, binding proteins, nutritional state and the physiological or pharmacological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "thyroxine-binding-globulin": {
     "label": "Thyroxine-Binding Globulin",
@@ -713,9 +668,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Thyroxine-Binding Globulin is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Thyroxine-Binding Globulin is a measurable biological variable used to characterize hormonal physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "hba1c": {
     "label": "HbA1c",
@@ -724,9 +679,9 @@ export const biomarkers = {
     "unit": "%",
     "direction": "target-range",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "HbA1c is a measurable outcome. Reference intervals and clinical meaning depend on the testing method and context.",
+    "description": "HbA1c reflects the proportion of hemoglobin that has become glycated during the life of circulating red blood cells. Because it integrates glucose exposure over roughly the previous 2–3 months, it is useful for assessing longer-term glycemic control.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as target range and records the measurement unit as %.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "fasting-glucose": {
     "label": "Fasting Glucose",
@@ -735,9 +690,9 @@ export const biomarkers = {
     "unit": "mg/dL",
     "direction": "target-range",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Fasting Glucose is a measurable outcome. Reference intervals and clinical meaning depend on the testing method and context.",
+    "description": "Fasting glucose is the concentration of glucose in blood after a defined fasting period. It reflects the balance between hepatic glucose output, peripheral glucose uptake and insulin action at a single point in time.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as target range and records the measurement unit as mg/dL.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "fasting-insulin": {
     "label": "Fasting Insulin",
@@ -746,9 +701,9 @@ export const biomarkers = {
     "unit": "µIU/mL",
     "direction": "target-range",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Fasting Insulin is a measurable outcome. Reference intervals and clinical meaning depend on the testing method and context.",
+    "description": "Fasting insulin measures circulating insulin under fasting conditions. Together with fasting glucose, it can be used to estimate insulin resistance and beta-cell compensation, although the interpretation is less direct than a dynamic glucose tolerance test.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as target range and records the measurement unit as µIU/mL.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "homa-ir": {
     "label": "HOMA-IR",
@@ -757,9 +712,9 @@ export const biomarkers = {
     "unit": "index",
     "direction": "target-range",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "HOMA-IR is a measurable outcome. Reference intervals and clinical meaning depend on the testing method and context.",
+    "description": "HOMA-IR is a calculated index derived from fasting glucose and fasting insulin. It is used as an approximate marker of insulin resistance in research and population studies rather than as a direct measurement of tissue insulin sensitivity.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as target range and records the measurement unit as index.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "c-peptide": {
     "label": "C-Peptide",
@@ -768,9 +723,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "C-Peptide is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "C-Peptide is a measurable biological variable used to characterize metabolic physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "oral-glucose-tolerance": {
     "label": "Oral Glucose Tolerance",
@@ -779,9 +734,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Oral Glucose Tolerance is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Oral Glucose Tolerance is a metabolic marker related to glucose regulation and insulin action. It captures a particular time scale of glucose homeostasis, so interpretation depends on whether the measurement is fasting, post-meal, continuous or calculated from other values.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "fructosamine": {
     "label": "Fructosamine",
@@ -790,9 +745,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Fructosamine is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Fructosamine is a measurable biological variable used to characterize metabolic physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "glycated-albumin": {
     "label": "Glycated Albumin",
@@ -801,9 +756,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Glycated Albumin is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Glycated Albumin is a measurable biological variable used to characterize metabolic physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "mean-glucose-cgm": {
     "label": "Mean Glucose (CGM)",
@@ -812,9 +767,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Mean Glucose (CGM) is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Mean Glucose (CGM) is a metabolic marker related to glucose regulation and insulin action. It captures a particular time scale of glucose homeostasis, so interpretation depends on whether the measurement is fasting, post-meal, continuous or calculated from other values.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "time-in-range": {
     "label": "Time in Range",
@@ -823,9 +778,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Time in Range is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Time in Range is a measurable biological variable used to characterize metabolic physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "glucose-variability": {
     "label": "Glucose Variability",
@@ -834,9 +789,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Glucose Variability is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Glucose Variability is a metabolic marker related to glucose regulation and insulin action. It captures a particular time scale of glucose homeostasis, so interpretation depends on whether the measurement is fasting, post-meal, continuous or calculated from other values.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "resting-metabolic-rate": {
     "label": "Resting Metabolic Rate",
@@ -845,9 +800,9 @@ export const biomarkers = {
     "unit": "kcal/day",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Resting Metabolic Rate is a measurable outcome. Reference intervals and clinical meaning depend on the testing method and context.",
+    "description": "Resting Metabolic Rate is a measurable biological variable used to characterize metabolic physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as kcal/day.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "beta-hydroxybutyrate": {
     "label": "Beta-Hydroxybutyrate",
@@ -856,9 +811,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Beta-Hydroxybutyrate is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Beta-Hydroxybutyrate is a gastrointestinal or microbiome-related measurement. It describes either the composition/activity of intestinal microorganisms or a measurable consequence of digestion, fermentation and host–microbe interaction.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "lactate": {
     "label": "Lactate",
@@ -867,9 +822,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Lactate is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Lactate is a physiological or exercise-performance measure. It captures a defined aspect of energy metabolism, neuromuscular function or tissue response, and the test protocol determines what the number actually represents.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "pyruvate": {
     "label": "Pyruvate",
@@ -878,9 +833,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Pyruvate is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Pyruvate is a measurable biological variable used to characterize metabolic physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "lactate-pyruvate-ratio": {
     "label": "Lactate/Pyruvate Ratio",
@@ -889,9 +844,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Lactate/Pyruvate Ratio is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Lactate/Pyruvate Ratio is a physiological or exercise-performance measure. It captures a defined aspect of energy metabolism, neuromuscular function or tissue response, and the test protocol determines what the number actually represents.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "tmao": {
     "label": "TMAO",
@@ -900,9 +855,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "TMAO is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "TMAO is a measurable biological variable used to characterize metabolic physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "homocysteine": {
     "label": "Homocysteine",
@@ -911,9 +866,9 @@ export const biomarkers = {
     "unit": "µmol/L",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Homocysteine is a measurable outcome. Reference intervals and clinical meaning depend on the testing method and context.",
+    "description": "Homocysteine is a measurable biological variable used to characterize metabolic physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as µmol/L.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "uric-acid": {
     "label": "Uric Acid",
@@ -922,9 +877,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Uric Acid is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Uric Acid is a measurable biological variable used to characterize metabolic physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "plasma-free-fatty-acids": {
     "label": "Plasma Free Fatty Acids",
@@ -933,9 +888,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Plasma Free Fatty Acids is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Plasma Free Fatty Acids is a measurable biological variable used to characterize metabolic physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "plasma-arginine": {
     "label": "Plasma Arginine",
@@ -944,9 +899,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Plasma Arginine is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Plasma Arginine is a measurable biological variable used to characterize metabolic physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "arginine-ornithine-ratio": {
     "label": "Arginine/Ornithine Ratio",
@@ -955,9 +910,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Arginine/Ornithine Ratio is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Arginine/Ornithine Ratio is a measurable biological variable used to characterize metabolic physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "citrulline": {
     "label": "Citrulline",
@@ -966,9 +921,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Citrulline is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Citrulline is a measurable biological variable used to characterize metabolic physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "plasma-glycine": {
     "label": "Plasma Glycine",
@@ -977,9 +932,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Plasma Glycine is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Plasma Glycine is a measurable biological variable used to characterize metabolic physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "plasma-taurine": {
     "label": "Plasma Taurine",
@@ -988,9 +943,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Plasma Taurine is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Plasma Taurine is a measurable biological variable used to characterize metabolic physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "plasma-tryptophan": {
     "label": "Plasma Tryptophan",
@@ -999,9 +954,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Plasma Tryptophan is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Plasma Tryptophan is a measurable biological variable used to characterize metabolic physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "kynurenine-tryptophan-ratio": {
     "label": "Kynurenine/Tryptophan Ratio",
@@ -1010,9 +965,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Kynurenine/Tryptophan Ratio is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Kynurenine/Tryptophan Ratio is a measurable biological variable used to characterize metabolic physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "plasma-bcaas": {
     "label": "Plasma BCAAs",
@@ -1021,9 +976,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Plasma BCAAs is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Plasma BCAAs is a measurable biological variable used to characterize metabolic physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "plasma-glutamine": {
     "label": "Plasma Glutamine",
@@ -1032,9 +987,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Plasma Glutamine is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Plasma Glutamine is a measurable biological variable used to characterize metabolic physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "plasma-carnitine": {
     "label": "Plasma Carnitine",
@@ -1043,9 +998,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Plasma Carnitine is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Plasma Carnitine is a measurable biological variable used to characterize metabolic physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "acylcarnitine-profile": {
     "label": "Acylcarnitine Profile",
@@ -1054,9 +1009,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Acylcarnitine Profile is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Acylcarnitine Profile is a measurable biological variable used to characterize metabolic physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "urinary-organic-acids": {
     "label": "Urinary Organic Acids",
@@ -1065,9 +1020,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Urinary Organic Acids is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Urinary Organic Acids is a measurable biological variable used to characterize metabolic physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "nitrogen-balance": {
     "label": "Nitrogen Balance",
@@ -1076,9 +1031,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Nitrogen Balance is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Nitrogen Balance is a measurable biological variable used to characterize metabolic physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "respiratory-quotient": {
     "label": "Respiratory Quotient",
@@ -1087,9 +1042,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Respiratory Quotient is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Respiratory Quotient is a measurable biological variable used to characterize metabolic physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "breath-acetone": {
     "label": "Breath Acetone",
@@ -1098,9 +1053,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Breath Acetone is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Breath Acetone is a measurable biological variable used to characterize metabolic physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "triglyceride-glucose-index": {
     "label": "Triglyceride-Glucose Index",
@@ -1109,9 +1064,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Triglyceride-Glucose Index is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Triglyceride-Glucose Index is a blood lipid measurement used to characterize circulating lipoproteins or triglyceride-rich particles. Its meaning depends on particle type, fasting status when relevant, metabolic context and the rest of the lipid profile.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "glucose-insulin-ratio": {
     "label": "Glucose/Insulin Ratio",
@@ -1120,9 +1075,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Glucose/Insulin Ratio is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Glucose/Insulin Ratio is a metabolic marker related to glucose regulation and insulin action. It captures a particular time scale of glucose homeostasis, so interpretation depends on whether the measurement is fasting, post-meal, continuous or calculated from other values.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "resting-energy-expenditure": {
     "label": "Resting Energy Expenditure",
@@ -1131,9 +1086,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Resting Energy Expenditure is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Resting Energy Expenditure is a measurable biological variable used to characterize metabolic physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "hepatic-insulin-resistance": {
     "label": "Hepatic Insulin Resistance",
@@ -1142,9 +1097,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Hepatic Insulin Resistance is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Hepatic Insulin Resistance is a metabolic marker related to glucose regulation and insulin action. It captures a particular time scale of glucose homeostasis, so interpretation depends on whether the measurement is fasting, post-meal, continuous or calculated from other values.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "insulin-sensitivity-index": {
     "label": "Insulin Sensitivity Index",
@@ -1153,9 +1108,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Insulin Sensitivity Index is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Insulin Sensitivity Index is a metabolic marker related to glucose regulation and insulin action. It captures a particular time scale of glucose homeostasis, so interpretation depends on whether the measurement is fasting, post-meal, continuous or calculated from other values.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "postprandial-glucose": {
     "label": "Postprandial Glucose",
@@ -1164,9 +1119,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Postprandial Glucose is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Postprandial Glucose is a metabolic marker related to glucose regulation and insulin action. It captures a particular time scale of glucose homeostasis, so interpretation depends on whether the measurement is fasting, post-meal, continuous or calculated from other values.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "postprandial-insulin": {
     "label": "Postprandial Insulin",
@@ -1175,9 +1130,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Postprandial Insulin is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Postprandial Insulin is a metabolic marker related to glucose regulation and insulin action. It captures a particular time scale of glucose homeostasis, so interpretation depends on whether the measurement is fasting, post-meal, continuous or calculated from other values.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "postprandial-triglycerides": {
     "label": "Postprandial Triglycerides",
@@ -1186,9 +1141,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Postprandial Triglycerides is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Postprandial Triglycerides is a blood lipid measurement used to characterize circulating lipoproteins or triglyceride-rich particles. Its meaning depends on particle type, fasting status when relevant, metabolic context and the rest of the lipid profile.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "ketone-breath": {
     "label": "Ketone Breath",
@@ -1197,9 +1152,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Ketone Breath is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Ketone Breath is a measurable biological variable used to characterize metabolic physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "muscle-phosphocreatine": {
     "label": "Muscle Phosphocreatine",
@@ -1208,9 +1163,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Muscle Phosphocreatine is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Muscle Phosphocreatine is a measurable biological variable used to characterize metabolic physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "muscle-glycogen": {
     "label": "Muscle Glycogen",
@@ -1219,20 +1174,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Muscle Glycogen is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Muscle Glycogen is a measurable biological variable used to characterize metabolic physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
-  },
-  "body-fat-percentage": {
-    "label": "Body Fat Percentage",
-    "short": "Body Fat Percent…",
-    "category": "body-comp",
-    "unit": "assay- or protocol-dependent",
-    "direction": "context-dependent",
-    "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Body Fat Percentage is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
-    "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "visceral-fat": {
     "label": "Visceral Fat",
@@ -1241,20 +1185,9 @@ export const biomarkers = {
     "unit": "cm² or estimate",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Visceral Fat is a measurable outcome. Reference intervals and clinical meaning depend on the testing method and context.",
+    "description": "Visceral Fat is a measurable biological variable used to characterize body-comp physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as cm² or estimate.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
-  },
-  "lean-body-mass": {
-    "label": "Lean Body Mass",
-    "short": "Lean Body Mass",
-    "category": "body-comp",
-    "unit": "assay- or protocol-dependent",
-    "direction": "context-dependent",
-    "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Lean Body Mass is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
-    "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "waist-circumference": {
     "label": "Waist Circumference",
@@ -1263,9 +1196,9 @@ export const biomarkers = {
     "unit": "cm",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Waist Circumference is a measurable outcome. Reference intervals and clinical meaning depend on the testing method and context.",
+    "description": "Waist Circumference is a measurable biological variable used to characterize body-comp physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as cm.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "body-weight": {
     "label": "Body Weight",
@@ -1274,9 +1207,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Body Weight is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Body Weight is a measurable biological variable used to characterize body-comp physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "bmi": {
     "label": "BMI",
@@ -1285,9 +1218,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "BMI is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "BMI is a measurable biological variable used to characterize body-comp physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "waist-to-height-ratio": {
     "label": "Waist-to-Height Ratio",
@@ -1296,9 +1229,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Waist-to-Height Ratio is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Waist-to-Height Ratio is a measurable biological variable used to characterize body-comp physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "skeletal-muscle-mass": {
     "label": "Skeletal Muscle Mass",
@@ -1307,9 +1240,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Skeletal Muscle Mass is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Skeletal Muscle Mass is a measurable biological variable used to characterize body-comp physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "bone-mineral-density": {
     "label": "Bone Mineral Density",
@@ -1318,9 +1251,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Bone Mineral Density is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Bone Mineral Density is a marker of mineral metabolism or skeletal physiology. It can reflect bone turnover, mineral availability, endocrine control or the structural properties of bone depending on the measurement method.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "bone-mineral-content": {
     "label": "Bone Mineral Content",
@@ -1329,9 +1262,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Bone Mineral Content is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Bone Mineral Content is a marker of mineral metabolism or skeletal physiology. It can reflect bone turnover, mineral availability, endocrine control or the structural properties of bone depending on the measurement method.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "fat-mass": {
     "label": "Fat Mass",
@@ -1340,9 +1273,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Fat Mass is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Fat Mass is a measurable biological variable used to characterize body-comp physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "android-gynoid-fat-ratio": {
     "label": "Android/Gynoid Fat Ratio",
@@ -1351,9 +1284,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Android/Gynoid Fat Ratio is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Android/Gynoid Fat Ratio is a measurable biological variable used to characterize body-comp physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "total-body-water": {
     "label": "Total Body Water",
@@ -1362,9 +1295,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Total Body Water is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Total Body Water is a measurable biological variable used to characterize body-comp physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "extracellular-water": {
     "label": "Extracellular Water",
@@ -1373,9 +1306,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Extracellular Water is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Extracellular Water is a measurable biological variable used to characterize body-comp physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "intracellular-water": {
     "label": "Intracellular Water",
@@ -1384,9 +1317,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Intracellular Water is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Intracellular Water is a measurable biological variable used to characterize body-comp physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "phase-angle": {
     "label": "Phase Angle",
@@ -1395,9 +1328,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Phase Angle is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Phase Angle is a measurable biological variable used to characterize body-comp physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "muscle-thickness": {
     "label": "Muscle Thickness",
@@ -1406,9 +1339,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Muscle Thickness is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Muscle Thickness is a physiological or exercise-performance measure. It captures a defined aspect of energy metabolism, neuromuscular function or tissue response, and the test protocol determines what the number actually represents.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "muscle-cross-sectional-area": {
     "label": "Muscle Cross-Sectional Area",
@@ -1417,9 +1350,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Muscle Cross-Sectional Area is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Muscle Cross-Sectional Area is a measurable biological variable used to characterize body-comp physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "muscle-fiber-area": {
     "label": "Muscle Fiber Area",
@@ -1428,9 +1361,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Muscle Fiber Area is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Muscle Fiber Area is a measurable biological variable used to characterize body-comp physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "appendicular-lean-mass": {
     "label": "Appendicular Lean Mass",
@@ -1439,9 +1372,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Appendicular Lean Mass is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Appendicular Lean Mass is a measurable biological variable used to characterize body-comp physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "bone-mineral-density-t-score": {
     "label": "Bone Mineral Density T-score",
@@ -1450,9 +1383,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Bone Mineral Density T-score is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Bone Mineral Density T-score is a marker of mineral metabolism or skeletal physiology. It can reflect bone turnover, mineral availability, endocrine control or the structural properties of bone depending on the measurement method.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "bone-mineral-density-z-score": {
     "label": "Bone Mineral Density Z-score",
@@ -1461,9 +1394,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Bone Mineral Density Z-score is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Bone Mineral Density Z-score is a marker of mineral metabolism or skeletal physiology. It can reflect bone turnover, mineral availability, endocrine control or the structural properties of bone depending on the measurement method.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "waist-to-hip-ratio": {
     "label": "Waist-to-Hip Ratio",
@@ -1472,9 +1405,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Waist-to-Hip Ratio is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Waist-to-Hip Ratio is a measurable biological variable used to characterize body-comp physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "neck-circumference": {
     "label": "Neck Circumference",
@@ -1483,9 +1416,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Neck Circumference is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Neck Circumference is a physiological or exercise-performance measure. It captures a defined aspect of energy metabolism, neuromuscular function or tissue response, and the test protocol determines what the number actually represents.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "hip-circumference": {
     "label": "Hip Circumference",
@@ -1494,9 +1427,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Hip Circumference is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Hip Circumference is a measurable biological variable used to characterize body-comp physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "subcutaneous-fat": {
     "label": "Subcutaneous Fat",
@@ -1505,9 +1438,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Subcutaneous Fat is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Subcutaneous Fat is a measurable biological variable used to characterize body-comp physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "abdominal-fat-area": {
     "label": "Abdominal Fat Area",
@@ -1516,9 +1449,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Abdominal Fat Area is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Abdominal Fat Area is a measurable biological variable used to characterize body-comp physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "dexa-fat-mass": {
     "label": "DEXA Fat Mass",
@@ -1527,9 +1460,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "DEXA Fat Mass is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "DEXA Fat Mass is a measurable biological variable used to characterize body-comp physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "dexa-lean-mass": {
     "label": "DEXA Lean Mass",
@@ -1538,9 +1471,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "DEXA Lean Mass is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "DEXA Lean Mass is a measurable biological variable used to characterize body-comp physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "vo2max": {
     "label": "VO₂max",
@@ -1549,9 +1482,9 @@ export const biomarkers = {
     "unit": "mL/kg/min",
     "direction": "higher-better",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "VO₂max is a measurable outcome. Reference intervals and clinical meaning depend on the testing method and context.",
+    "description": "VO₂max is a physiological or exercise-performance measure. It captures a defined aspect of energy metabolism, neuromuscular function or tissue response, and the test protocol determines what the number actually represents.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as higher better and records the measurement unit as mL/kg/min.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "time-to-exhaustion": {
     "label": "Time to Exhaustion",
@@ -1560,9 +1493,9 @@ export const biomarkers = {
     "unit": "minutes",
     "direction": "higher-better",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Time to Exhaustion is a measurable outcome. Reference intervals and clinical meaning depend on the testing method and context.",
+    "description": "Time to Exhaustion is a measurable biological variable used to characterize performance physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as higher better and records the measurement unit as minutes.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "lactate-threshold": {
     "label": "Lactate Threshold",
@@ -1571,20 +1504,9 @@ export const biomarkers = {
     "unit": "protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Lactate Threshold is a measurable outcome. Reference intervals and clinical meaning depend on the testing method and context.",
+    "description": "Lactate Threshold is a physiological or exercise-performance measure. It captures a defined aspect of energy metabolism, neuromuscular function or tissue response, and the test protocol determines what the number actually represents.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
-  },
-  "one-rep-max": {
-    "label": "One-Rep Max",
-    "short": "One-Rep Max",
-    "category": "performance",
-    "unit": "assay- or protocol-dependent",
-    "direction": "context-dependent",
-    "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "One-Rep Max is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
-    "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "peak-power": {
     "label": "Peak Power",
@@ -1593,9 +1515,9 @@ export const biomarkers = {
     "unit": "W",
     "direction": "higher-better",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Peak Power is a measurable outcome. Reference intervals and clinical meaning depend on the testing method and context.",
+    "description": "Peak power is the highest mechanical power produced during a defined explosive exercise test. It depends on neuromuscular recruitment, muscle contractile properties, energy-system contribution and test design.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as higher better and records the measurement unit as W.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "vertical-jump": {
     "label": "Vertical Jump",
@@ -1604,9 +1526,9 @@ export const biomarkers = {
     "unit": "cm",
     "direction": "higher-better",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Vertical Jump is a measurable outcome. Reference intervals and clinical meaning depend on the testing method and context.",
+    "description": "Vertical Jump is a measurable biological variable used to characterize performance physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as higher better and records the measurement unit as cm.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "grip-strength": {
     "label": "Grip Strength",
@@ -1615,9 +1537,9 @@ export const biomarkers = {
     "unit": "kg",
     "direction": "higher-better",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Grip Strength is a measurable outcome. Reference intervals and clinical meaning depend on the testing method and context.",
+    "description": "Grip Strength is a physiological or exercise-performance measure. It captures a defined aspect of energy metabolism, neuromuscular function or tissue response, and the test protocol determines what the number actually represents.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as higher better and records the measurement unit as kg.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "time-trial-performance": {
     "label": "Time-Trial Performance",
@@ -1626,9 +1548,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Time-Trial Performance is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Time-Trial Performance is a measurable biological variable used to characterize performance physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "running-economy": {
     "label": "Running Economy",
@@ -1637,9 +1559,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Running Economy is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Running Economy is a measurable biological variable used to characterize performance physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "heart-rate-recovery": {
     "label": "Heart Rate Recovery",
@@ -1648,9 +1570,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Heart Rate Recovery is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Heart Rate Recovery is a cardiovascular physiological measurement. It reflects the interaction of cardiac function, vascular tone, blood volume and autonomic regulation, and its meaning depends strongly on the measurement protocol and time of day.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "countermovement-jump": {
     "label": "Countermovement Jump",
@@ -1659,9 +1581,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Countermovement Jump is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Countermovement Jump is a measurable biological variable used to characterize performance physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "isometric-mid-thigh-pull": {
     "label": "Isometric Mid-Thigh Pull",
@@ -1670,9 +1592,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Isometric Mid-Thigh Pull is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Isometric Mid-Thigh Pull is a measurable biological variable used to characterize performance physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "muscle-oxygenation": {
     "label": "Muscle Oxygenation",
@@ -1681,9 +1603,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Muscle Oxygenation is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Muscle Oxygenation is a measurable biological variable used to characterize performance physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "rating-of-perceived-exertion": {
     "label": "Rating of Perceived Exertion",
@@ -1692,9 +1614,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Rating of Perceived Exertion is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Rating of Perceived Exertion is a measurable biological variable used to characterize performance physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "training-load": {
     "label": "Training Load",
@@ -1703,9 +1625,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Training Load is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Training Load is a measurable biological variable used to characterize performance physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "repeated-sprint-performance": {
     "label": "Repeated Sprint Performance",
@@ -1714,9 +1636,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Repeated Sprint Performance is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Repeated Sprint Performance is a measurable biological variable used to characterize performance physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "ventilatory-threshold": {
     "label": "Ventilatory Threshold",
@@ -1725,9 +1647,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Ventilatory Threshold is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Ventilatory Threshold is a measurable biological variable used to characterize performance physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "economy-of-movement": {
     "label": "Economy of Movement",
@@ -1736,9 +1658,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Economy of Movement is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Economy of Movement is a measurable biological variable used to characterize performance physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "exercise-capacity": {
     "label": "Exercise Capacity",
@@ -1747,9 +1669,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Exercise Capacity is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Exercise Capacity is a measurable biological variable used to characterize performance physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "work-capacity": {
     "label": "Work Capacity",
@@ -1758,9 +1680,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Work Capacity is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Work Capacity is a measurable biological variable used to characterize performance physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "sprint-time": {
     "label": "Sprint Time",
@@ -1769,9 +1691,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Sprint Time is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Sprint Time is a measurable biological variable used to characterize performance physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "power-output": {
     "label": "Power Output",
@@ -1780,9 +1702,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Power Output is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Power Output is a physiological or exercise-performance measure. It captures a defined aspect of energy metabolism, neuromuscular function or tissue response, and the test protocol determines what the number actually represents.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "muscular-endurance": {
     "label": "Muscular Endurance",
@@ -1791,9 +1713,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Muscular Endurance is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Muscular Endurance is a physiological or exercise-performance measure. It captures a defined aspect of energy metabolism, neuromuscular function or tissue response, and the test protocol determines what the number actually represents.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "isometric-strength": {
     "label": "Isometric Strength",
@@ -1802,9 +1724,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Isometric Strength is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Isometric Strength is a physiological or exercise-performance measure. It captures a defined aspect of energy metabolism, neuromuscular function or tissue response, and the test protocol determines what the number actually represents.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "dynamic-strength": {
     "label": "Dynamic Strength",
@@ -1813,9 +1735,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Dynamic Strength is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Dynamic Strength is a physiological or exercise-performance measure. It captures a defined aspect of energy metabolism, neuromuscular function or tissue response, and the test protocol determines what the number actually represents.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "gait-speed": {
     "label": "Gait Speed",
@@ -1824,9 +1746,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Gait Speed is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Gait Speed is a measurable biological variable used to characterize performance physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "six-minute-walk-distance": {
     "label": "Six-Minute Walk Distance",
@@ -1835,9 +1757,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Six-Minute Walk Distance is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Six-Minute Walk Distance is a measurable biological variable used to characterize performance physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "exercise-oxygen-kinetics": {
     "label": "Exercise Oxygen Kinetics",
@@ -1846,9 +1768,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Exercise Oxygen Kinetics is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Exercise Oxygen Kinetics is a measurable biological variable used to characterize performance physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "blood-lactate-threshold": {
     "label": "Blood Lactate Threshold",
@@ -1857,9 +1779,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Blood Lactate Threshold is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Blood Lactate Threshold is a physiological or exercise-performance measure. It captures a defined aspect of energy metabolism, neuromuscular function or tissue response, and the test protocol determines what the number actually represents.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "critical-power": {
     "label": "Critical Power",
@@ -1868,9 +1790,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Critical Power is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Critical Power is a physiological or exercise-performance measure. It captures a defined aspect of energy metabolism, neuromuscular function or tissue response, and the test protocol determines what the number actually represents.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "critical-speed": {
     "label": "Critical Speed",
@@ -1879,9 +1801,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Critical Speed is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Critical Speed is a measurable biological variable used to characterize performance physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "peak-oxygen-uptake": {
     "label": "Peak Oxygen Uptake",
@@ -1890,9 +1812,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Peak Oxygen Uptake is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Peak Oxygen Uptake is a measurable biological variable used to characterize performance physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "anaerobic-capacity": {
     "label": "Anaerobic Capacity",
@@ -1901,9 +1823,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Anaerobic Capacity is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Anaerobic Capacity is a measurable biological variable used to characterize performance physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "aerobic-capacity": {
     "label": "Aerobic Capacity",
@@ -1912,9 +1834,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Aerobic Capacity is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Aerobic Capacity is a measurable biological variable used to characterize performance physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "recovery-time": {
     "label": "Recovery Time",
@@ -1923,9 +1845,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Recovery Time is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Recovery Time is a measurable biological variable used to characterize performance physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "exercise-heart-rate": {
     "label": "Exercise Heart Rate",
@@ -1934,9 +1856,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Exercise Heart Rate is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Exercise Heart Rate is a cardiovascular physiological measurement. It reflects the interaction of cardiac function, vascular tone, blood volume and autonomic regulation, and its meaning depends strongly on the measurement protocol and time of day.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "heart-rate-at-fixed-workload": {
     "label": "Heart Rate at Fixed Workload",
@@ -1945,9 +1867,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Heart Rate at Fixed Workload is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Heart Rate at Fixed Workload is a cardiovascular physiological measurement. It reflects the interaction of cardiac function, vascular tone, blood volume and autonomic regulation, and its meaning depends strongly on the measurement protocol and time of day.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "respiratory-exchange-ratio": {
     "label": "Respiratory Exchange Ratio",
@@ -1956,9 +1878,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Respiratory Exchange Ratio is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Respiratory Exchange Ratio is a measurable biological variable used to characterize performance physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "ventilatory-efficiency": {
     "label": "Ventilatory Efficiency",
@@ -1967,9 +1889,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Ventilatory Efficiency is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Ventilatory Efficiency is a measurable biological variable used to characterize performance physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "exercise-rpe": {
     "label": "Exercise RPE",
@@ -1978,9 +1900,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Exercise RPE is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Exercise RPE is a measurable biological variable used to characterize performance physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "training-volume": {
     "label": "Training Volume",
@@ -1989,9 +1911,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Training Volume is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Training Volume is a measurable biological variable used to characterize performance physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "training-intensity": {
     "label": "Training Intensity",
@@ -2000,9 +1922,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Training Intensity is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Training Intensity is a measurable biological variable used to characterize performance physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "jump-height": {
     "label": "Jump Height",
@@ -2011,9 +1933,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Jump Height is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Jump Height is a measurable biological variable used to characterize performance physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "sprint-repeated-ability": {
     "label": "Sprint Repeated Ability",
@@ -2022,9 +1944,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Sprint Repeated Ability is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Sprint Repeated Ability is a measurable biological variable used to characterize performance physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "time-trial-time": {
     "label": "Time Trial Time",
@@ -2033,31 +1955,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Time Trial Time is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Time Trial Time is a measurable biological variable used to characterize performance physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
-  },
-  "systolic-blood-pressure": {
-    "label": "Systolic Blood Pressure",
-    "short": "Systolic Blood P…",
-    "category": "cardio",
-    "unit": "assay- or protocol-dependent",
-    "direction": "context-dependent",
-    "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Systolic Blood Pressure is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
-    "sources": [],
-    "reviewStatus": "needs-review"
-  },
-  "diastolic-blood-pressure": {
-    "label": "Diastolic Blood Pressure",
-    "short": "Diastolic Blood …",
-    "category": "cardio",
-    "unit": "assay- or protocol-dependent",
-    "direction": "context-dependent",
-    "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Diastolic Blood Pressure is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
-    "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "resting-heart-rate": {
     "label": "Resting Heart Rate",
@@ -2066,42 +1966,9 @@ export const biomarkers = {
     "unit": "bpm",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Resting Heart Rate is a measurable outcome. Reference intervals and clinical meaning depend on the testing method and context.",
+    "description": "Resting Heart Rate is a cardiovascular physiological measurement. It reflects the interaction of cardiac function, vascular tone, blood volume and autonomic regulation, and its meaning depends strongly on the measurement protocol and time of day.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as bpm.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
-  },
-  "heart-rate-variability": {
-    "label": "Heart Rate Variability",
-    "short": "Heart Rate Varia…",
-    "category": "cardio",
-    "unit": "assay- or protocol-dependent",
-    "direction": "context-dependent",
-    "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Heart Rate Variability is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
-    "sources": [],
-    "reviewStatus": "needs-review"
-  },
-  "hdl-cholesterol": {
-    "label": "HDL Cholesterol",
-    "short": "HDL Cholesterol",
-    "category": "cardio",
-    "unit": "assay- or protocol-dependent",
-    "direction": "context-dependent",
-    "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "HDL Cholesterol is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
-    "sources": [],
-    "reviewStatus": "needs-review"
-  },
-  "ldl-cholesterol": {
-    "label": "LDL Cholesterol",
-    "short": "LDL Cholesterol",
-    "category": "cardio",
-    "unit": "assay- or protocol-dependent",
-    "direction": "context-dependent",
-    "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "LDL Cholesterol is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
-    "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "total-cholesterol": {
     "label": "Total Cholesterol",
@@ -2110,9 +1977,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Total Cholesterol is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Total Cholesterol is a blood lipid measurement used to characterize circulating lipoproteins or triglyceride-rich particles. Its meaning depends on particle type, fasting status when relevant, metabolic context and the rest of the lipid profile.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "non-hdl-cholesterol": {
     "label": "Non-HDL Cholesterol",
@@ -2121,9 +1988,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Non-HDL Cholesterol is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Non-HDL Cholesterol is a blood lipid measurement used to characterize circulating lipoproteins or triglyceride-rich particles. Its meaning depends on particle type, fasting status when relevant, metabolic context and the rest of the lipid profile.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "triglycerides": {
     "label": "Triglycerides",
@@ -2132,9 +1999,9 @@ export const biomarkers = {
     "unit": "mg/dL",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Triglycerides is a measurable outcome. Reference intervals and clinical meaning depend on the testing method and context.",
+    "description": "Triglycerides is a blood lipid measurement used to characterize circulating lipoproteins or triglyceride-rich particles. Its meaning depends on particle type, fasting status when relevant, metabolic context and the rest of the lipid profile.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as mg/dL.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "apolipoprotein-b": {
     "label": "Apolipoprotein B",
@@ -2143,9 +2010,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Apolipoprotein B is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Apolipoprotein B is a measurable biological variable used to characterize cardio physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "lipoprotein-a": {
     "label": "Lipoprotein(a)",
@@ -2154,9 +2021,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Lipoprotein(a) is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Lipoprotein(a) is a measurable biological variable used to characterize cardio physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "apolipoprotein-a-i": {
     "label": "Apolipoprotein A-I",
@@ -2165,9 +2032,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Apolipoprotein A-I is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Apolipoprotein A-I is a measurable biological variable used to characterize cardio physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "ldl-particle-number": {
     "label": "LDL Particle Number",
@@ -2176,9 +2043,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "LDL Particle Number is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "LDL Particle Number is a blood lipid measurement used to characterize circulating lipoproteins or triglyceride-rich particles. Its meaning depends on particle type, fasting status when relevant, metabolic context and the rest of the lipid profile.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "small-dense-ldl": {
     "label": "Small Dense LDL",
@@ -2187,9 +2054,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Small Dense LDL is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Small Dense LDL is a blood lipid measurement used to characterize circulating lipoproteins or triglyceride-rich particles. Its meaning depends on particle type, fasting status when relevant, metabolic context and the rest of the lipid profile.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "oxidized-ldl": {
     "label": "Oxidized LDL",
@@ -2198,9 +2065,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Oxidized LDL is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Oxidized LDL is a blood lipid measurement used to characterize circulating lipoproteins or triglyceride-rich particles. Its meaning depends on particle type, fasting status when relevant, metabolic context and the rest of the lipid profile.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "lp-pla2": {
     "label": "Lp-PLA2",
@@ -2209,9 +2076,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Lp-PLA2 is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Lp-PLA2 is a measurable biological variable used to characterize cardio physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "coronary-artery-calcium-score": {
     "label": "Coronary Artery Calcium Score",
@@ -2220,9 +2087,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Coronary Artery Calcium Score is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Coronary Artery Calcium Score is a marker of mineral metabolism or skeletal physiology. It can reflect bone turnover, mineral availability, endocrine control or the structural properties of bone depending on the measurement method.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "pulse-wave-velocity": {
     "label": "Pulse Wave Velocity",
@@ -2231,9 +2098,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Pulse Wave Velocity is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Pulse Wave Velocity is a cardiovascular physiological measurement. It reflects the interaction of cardiac function, vascular tone, blood volume and autonomic regulation, and its meaning depends strongly on the measurement protocol and time of day.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "ankle-brachial-index": {
     "label": "Ankle-Brachial Index",
@@ -2242,9 +2109,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Ankle-Brachial Index is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Ankle-Brachial Index is a measurable biological variable used to characterize cardio physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "endothelial-function": {
     "label": "Endothelial Function",
@@ -2253,9 +2120,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Endothelial Function is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Endothelial Function is a measurable biological variable used to characterize cardio physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "flow-mediated-dilation": {
     "label": "Flow-Mediated Dilation",
@@ -2264,9 +2131,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Flow-Mediated Dilation is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Flow-Mediated Dilation is a measurable biological variable used to characterize cardio physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "arterial-stiffness": {
     "label": "Arterial Stiffness",
@@ -2275,9 +2142,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Arterial Stiffness is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Arterial Stiffness is a measurable biological variable used to characterize cardio physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "apob-apoa1-ratio": {
     "label": "ApoB/ApoA1 Ratio",
@@ -2286,9 +2153,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "ApoB/ApoA1 Ratio is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "ApoB/ApoA1 Ratio is a blood lipid measurement used to characterize circulating lipoproteins or triglyceride-rich particles. Its meaning depends on particle type, fasting status when relevant, metabolic context and the rest of the lipid profile.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "triglyceride-hdl-ratio": {
     "label": "Triglyceride/HDL Ratio",
@@ -2297,9 +2164,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Triglyceride/HDL Ratio is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Triglyceride/HDL Ratio is a blood lipid measurement used to characterize circulating lipoproteins or triglyceride-rich particles. Its meaning depends on particle type, fasting status when relevant, metabolic context and the rest of the lipid profile.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "total-cholesterol-hdl-ratio": {
     "label": "Total Cholesterol/HDL Ratio",
@@ -2308,9 +2175,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Total Cholesterol/HDL Ratio is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Total Cholesterol/HDL Ratio is a blood lipid measurement used to characterize circulating lipoproteins or triglyceride-rich particles. Its meaning depends on particle type, fasting status when relevant, metabolic context and the rest of the lipid profile.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "nt-probnp": {
     "label": "NT-proBNP",
@@ -2319,9 +2186,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "NT-proBNP is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "NT-proBNP is a measurable biological variable used to characterize cardio physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "bnp": {
     "label": "BNP",
@@ -2330,9 +2197,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "BNP is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "BNP is a measurable biological variable used to characterize cardio physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "troponin": {
     "label": "Troponin",
@@ -2341,9 +2208,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Troponin is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Troponin is a measurable biological variable used to characterize cardio physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "high-sensitivity-troponin": {
     "label": "High-Sensitivity Troponin",
@@ -2352,9 +2219,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "High-Sensitivity Troponin is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "High-Sensitivity Troponin is a measurable biological variable used to characterize cardio physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "resting-ecg-qtc": {
     "label": "Resting ECG QTc",
@@ -2363,9 +2230,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Resting ECG QTc is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Resting ECG QTc is a measurable biological variable used to characterize cardio physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "oxygen-saturation": {
     "label": "Oxygen Saturation",
@@ -2374,9 +2241,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Oxygen Saturation is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Oxygen Saturation is a measurable biological variable used to characterize cardio physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "pulse-pressure": {
     "label": "Pulse Pressure",
@@ -2385,9 +2252,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Pulse Pressure is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Pulse Pressure is a cardiovascular physiological measurement. It reflects the interaction of cardiac function, vascular tone, blood volume and autonomic regulation, and its meaning depends strongly on the measurement protocol and time of day.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "mean-arterial-pressure": {
     "label": "Mean Arterial Pressure",
@@ -2396,9 +2263,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Mean Arterial Pressure is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Mean Arterial Pressure is a cardiovascular physiological measurement. It reflects the interaction of cardiac function, vascular tone, blood volume and autonomic regulation, and its meaning depends strongly on the measurement protocol and time of day.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "central-blood-pressure": {
     "label": "Central Blood Pressure",
@@ -2407,9 +2274,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Central Blood Pressure is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Central Blood Pressure is a cardiovascular physiological measurement. It reflects the interaction of cardiac function, vascular tone, blood volume and autonomic regulation, and its meaning depends strongly on the measurement protocol and time of day.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "coronary-flow-reserve": {
     "label": "Coronary Flow Reserve",
@@ -2418,9 +2285,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Coronary Flow Reserve is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Coronary Flow Reserve is a measurable biological variable used to characterize cardio physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "carotid-intima-media-thickness": {
     "label": "Carotid Intima-Media Thickness",
@@ -2429,9 +2296,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Carotid Intima-Media Thickness is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Carotid Intima-Media Thickness is a physiological or exercise-performance measure. It captures a defined aspect of energy metabolism, neuromuscular function or tissue response, and the test protocol determines what the number actually represents.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "platelet-aggregation": {
     "label": "Platelet Aggregation",
@@ -2440,9 +2307,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Platelet Aggregation is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Platelet Aggregation is a measurable biological variable used to characterize cardio physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "fibrinogen": {
     "label": "Fibrinogen",
@@ -2451,9 +2318,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Fibrinogen is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Fibrinogen is a marker associated with inflammatory or immune signaling. It can reflect activation of a particular pathway without identifying the cause, tissue source or clinical significance of that activation.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "d-dimer": {
     "label": "D-dimer",
@@ -2462,9 +2329,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "D-dimer is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "D-dimer is a measurable biological variable used to characterize cardio physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "prothrombin-time": {
     "label": "Prothrombin Time",
@@ -2473,9 +2340,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Prothrombin Time is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Prothrombin Time is a measurable biological variable used to characterize cardio physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "inr": {
     "label": "INR",
@@ -2484,9 +2351,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "INR is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "INR is a measurable biological variable used to characterize cardio physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "aptt": {
     "label": "aPTT",
@@ -2495,9 +2362,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "aPTT is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "aPTT is a measurable biological variable used to characterize cardio physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "von-willebrand-factor": {
     "label": "von Willebrand Factor",
@@ -2506,9 +2373,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "von Willebrand Factor is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "von Willebrand Factor is a measurable biological variable used to characterize cardio physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "plasma-viscosity": {
     "label": "Plasma Viscosity",
@@ -2517,9 +2384,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Plasma Viscosity is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Plasma Viscosity is a measurable biological variable used to characterize cardio physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "endothelin-1": {
     "label": "Endothelin-1",
@@ -2528,9 +2395,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Endothelin-1 is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Endothelin-1 is a measurable biological variable used to characterize cardio physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "adma": {
     "label": "ADMA",
@@ -2539,9 +2406,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "ADMA is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "ADMA is a measurable biological variable used to characterize cardio physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "nitrite-nitrate": {
     "label": "Nitrite/Nitrate",
@@ -2550,9 +2417,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Nitrite/Nitrate is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Nitrite/Nitrate is a measurable biological variable used to characterize cardio physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "aortic-pulse-wave-velocity": {
     "label": "Aortic Pulse Wave Velocity",
@@ -2561,9 +2428,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Aortic Pulse Wave Velocity is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Aortic Pulse Wave Velocity is a cardiovascular physiological measurement. It reflects the interaction of cardiac function, vascular tone, blood volume and autonomic regulation, and its meaning depends strongly on the measurement protocol and time of day.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "coronary-calcium-score": {
     "label": "Coronary Calcium Score",
@@ -2572,9 +2439,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Coronary Calcium Score is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Coronary Calcium Score is a marker of mineral metabolism or skeletal physiology. It can reflect bone turnover, mineral availability, endocrine control or the structural properties of bone depending on the measurement method.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "cardiac-output": {
     "label": "Cardiac Output",
@@ -2583,9 +2450,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Cardiac Output is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Cardiac Output is a measurable biological variable used to characterize cardio physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "stroke-volume": {
     "label": "Stroke Volume",
@@ -2594,9 +2461,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Stroke Volume is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Stroke Volume is a measurable biological variable used to characterize cardio physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "ejection-fraction": {
     "label": "Ejection Fraction",
@@ -2605,9 +2472,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Ejection Fraction is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Ejection Fraction is a measurable biological variable used to characterize cardio physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "orthostatic-blood-pressure": {
     "label": "Orthostatic Blood Pressure",
@@ -2616,20 +2483,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Orthostatic Blood Pressure is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Orthostatic Blood Pressure is a cardiovascular physiological measurement. It reflects the interaction of cardiac function, vascular tone, blood volume and autonomic regulation, and its meaning depends strongly on the measurement protocol and time of day.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
-  },
-  "c-reactive-protein": {
-    "label": "C-Reactive Protein",
-    "short": "C-Reactive Protein",
-    "category": "inflammation",
-    "unit": "assay- or protocol-dependent",
-    "direction": "context-dependent",
-    "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "C-Reactive Protein is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
-    "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "high-sensitivity-crp": {
     "label": "High-Sensitivity CRP",
@@ -2638,20 +2494,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "High-Sensitivity CRP is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "High-Sensitivity CRP is a marker associated with inflammatory or immune signaling. It can reflect activation of a particular pathway without identifying the cause, tissue source or clinical significance of that activation.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
-  },
-  "interleukin-6": {
-    "label": "Interleukin-6",
-    "short": "Interleukin-6",
-    "category": "inflammation",
-    "unit": "assay- or protocol-dependent",
-    "direction": "context-dependent",
-    "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Interleukin-6 is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
-    "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "tnf-alpha": {
     "label": "TNF-alpha",
@@ -2660,9 +2505,9 @@ export const biomarkers = {
     "unit": "pg/mL",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "TNF-alpha is a measurable outcome. Reference intervals and clinical meaning depend on the testing method and context.",
+    "description": "TNF-alpha is a marker associated with inflammatory or immune signaling. It can reflect activation of a particular pathway without identifying the cause, tissue source or clinical significance of that activation.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as pg/mL.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "interleukin-1-beta": {
     "label": "Interleukin-1 Beta",
@@ -2671,9 +2516,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Interleukin-1 Beta is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Interleukin-1 Beta is a marker associated with inflammatory or immune signaling. It can reflect activation of a particular pathway without identifying the cause, tissue source or clinical significance of that activation.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "interleukin-10": {
     "label": "Interleukin-10",
@@ -2682,9 +2527,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Interleukin-10 is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Interleukin-10 is a marker associated with inflammatory or immune signaling. It can reflect activation of a particular pathway without identifying the cause, tissue source or clinical significance of that activation.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "interleukin-17a": {
     "label": "Interleukin-17A",
@@ -2693,9 +2538,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Interleukin-17A is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Interleukin-17A is a marker associated with inflammatory or immune signaling. It can reflect activation of a particular pathway without identifying the cause, tissue source or clinical significance of that activation.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "interferon-gamma": {
     "label": "Interferon Gamma",
@@ -2704,9 +2549,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Interferon Gamma is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Interferon Gamma is a measurable biological variable used to characterize inflammation physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "interleukin-8": {
     "label": "Interleukin-8",
@@ -2715,9 +2560,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Interleukin-8 is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Interleukin-8 is a marker associated with inflammatory or immune signaling. It can reflect activation of a particular pathway without identifying the cause, tissue source or clinical significance of that activation.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "esr": {
     "label": "ESR",
@@ -2726,9 +2571,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "ESR is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "ESR is a measurable biological variable used to characterize inflammation physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "myeloperoxidase": {
     "label": "Myeloperoxidase",
@@ -2737,9 +2582,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Myeloperoxidase is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Myeloperoxidase is a measurable biological variable used to characterize inflammation physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "neutrophil-to-lymphocyte-ratio": {
     "label": "Neutrophil-to-Lymphocyte Ratio",
@@ -2748,9 +2593,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Neutrophil-to-Lymphocyte Ratio is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Neutrophil-to-Lymphocyte Ratio is a measurable biological variable used to characterize inflammation physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "platelet-to-lymphocyte-ratio": {
     "label": "Platelet-to-Lymphocyte Ratio",
@@ -2759,9 +2604,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Platelet-to-Lymphocyte Ratio is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Platelet-to-Lymphocyte Ratio is a measurable biological variable used to characterize inflammation physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "ferritin-with-crp-context": {
     "label": "Ferritin with CRP Context",
@@ -2770,9 +2615,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Ferritin with CRP Context is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Ferritin with CRP Context is a marker associated with inflammatory or immune signaling. It can reflect activation of a particular pathway without identifying the cause, tissue source or clinical significance of that activation.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "complement-c3": {
     "label": "Complement C3",
@@ -2781,9 +2626,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Complement C3 is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Complement C3 is a measurable biological variable used to characterize inflammation physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "complement-c4": {
     "label": "Complement C4",
@@ -2792,9 +2637,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Complement C4 is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Complement C4 is a measurable biological variable used to characterize inflammation physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "igg": {
     "label": "IgG",
@@ -2803,9 +2648,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "IgG is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "IgG is a measurable biological variable used to characterize inflammation physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "iga": {
     "label": "IgA",
@@ -2814,9 +2659,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "IgA is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "IgA is a measurable biological variable used to characterize inflammation physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "igm": {
     "label": "IgM",
@@ -2825,9 +2670,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "IgM is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "IgM is a measurable biological variable used to characterize inflammation physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "total-ige": {
     "label": "Total IgE",
@@ -2836,9 +2681,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Total IgE is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Total IgE is a measurable biological variable used to characterize inflammation physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "eosinophil-cationic-protein": {
     "label": "Eosinophil Cationic Protein",
@@ -2847,9 +2692,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Eosinophil Cationic Protein is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Eosinophil Cationic Protein is a measurable biological variable used to characterize inflammation physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "procalcitonin": {
     "label": "Procalcitonin",
@@ -2858,9 +2703,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Procalcitonin is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Procalcitonin is a measurable biological variable used to characterize inflammation physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "calprotectin": {
     "label": "Calprotectin",
@@ -2869,9 +2714,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Calprotectin is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Calprotectin is a marker associated with inflammatory or immune signaling. It can reflect activation of a particular pathway without identifying the cause, tissue source or clinical significance of that activation.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "serum-amyloid-a": {
     "label": "Serum Amyloid A",
@@ -2880,9 +2725,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Serum Amyloid A is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Serum Amyloid A is a measurable biological variable used to characterize inflammation physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "soluble-il-2-receptor": {
     "label": "Soluble IL-2 Receptor",
@@ -2891,9 +2736,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Soluble IL-2 Receptor is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Soluble IL-2 Receptor is a measurable biological variable used to characterize inflammation physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "cxcl10": {
     "label": "CXCL10",
@@ -2902,9 +2747,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "CXCL10 is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "CXCL10 is a measurable biological variable used to characterize inflammation physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "ccl2": {
     "label": "CCL2",
@@ -2913,9 +2758,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "CCL2 is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "CCL2 is a measurable biological variable used to characterize inflammation physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "il-18": {
     "label": "IL-18",
@@ -2924,9 +2769,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "IL-18 is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "IL-18 is a measurable biological variable used to characterize inflammation physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "il-33": {
     "label": "IL-33",
@@ -2935,9 +2780,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "IL-33 is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "IL-33 is a measurable biological variable used to characterize inflammation physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "il-23": {
     "label": "IL-23",
@@ -2946,9 +2791,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "IL-23 is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "IL-23 is a measurable biological variable used to characterize inflammation physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "il-12": {
     "label": "IL-12",
@@ -2957,9 +2802,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "IL-12 is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "IL-12 is a measurable biological variable used to characterize inflammation physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "il-4": {
     "label": "IL-4",
@@ -2968,9 +2813,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "IL-4 is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "IL-4 is a measurable biological variable used to characterize inflammation physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "il-5": {
     "label": "IL-5",
@@ -2979,9 +2824,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "IL-5 is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "IL-5 is a measurable biological variable used to characterize inflammation physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "il-13": {
     "label": "IL-13",
@@ -2990,9 +2835,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "IL-13 is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "IL-13 is a measurable biological variable used to characterize inflammation physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "il-22": {
     "label": "IL-22",
@@ -3001,9 +2846,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "IL-22 is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "IL-22 is a measurable biological variable used to characterize inflammation physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "tgf-beta": {
     "label": "TGF-beta",
@@ -3012,9 +2857,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "TGF-beta is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "TGF-beta is a measurable biological variable used to characterize inflammation physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "haptoglobin": {
     "label": "Haptoglobin",
@@ -3023,9 +2868,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Haptoglobin is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Haptoglobin is a measurable biological variable used to characterize inflammation physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "alpha-1-acid-glycoprotein": {
     "label": "Alpha-1-Acid Glycoprotein",
@@ -3034,9 +2879,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Alpha-1-Acid Glycoprotein is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Alpha-1-Acid Glycoprotein is a measurable biological variable used to characterize inflammation physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "acute-phase-protein-panel": {
     "label": "Acute Phase Protein Panel",
@@ -3045,9 +2890,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Acute Phase Protein Panel is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Acute Phase Protein Panel is a measurable biological variable used to characterize inflammation physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "inflammatory-marker-panel": {
     "label": "Inflammatory Marker Panel",
@@ -3056,9 +2901,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Inflammatory Marker Panel is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Inflammatory Marker Panel is a measurable biological variable used to characterize inflammation physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "neutrophil-count": {
     "label": "Neutrophil Count",
@@ -3067,9 +2912,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Neutrophil Count is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Neutrophil Count is a measurable biological variable used to characterize inflammation physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "monocyte-count": {
     "label": "Monocyte Count",
@@ -3078,9 +2923,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Monocyte Count is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Monocyte Count is a measurable biological variable used to characterize inflammation physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "eosinophil-count": {
     "label": "Eosinophil Count",
@@ -3089,9 +2934,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Eosinophil Count is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Eosinophil Count is a measurable biological variable used to characterize inflammation physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "basophil-count": {
     "label": "Basophil Count",
@@ -3100,9 +2945,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Basophil Count is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Basophil Count is a measurable biological variable used to characterize inflammation physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "wbc-count": {
     "label": "WBC Count",
@@ -3111,9 +2956,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "WBC Count is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "WBC Count is a measurable biological variable used to characterize inflammation physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "platelet-count": {
     "label": "Platelet Count",
@@ -3122,9 +2967,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Platelet Count is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Platelet Count is a measurable biological variable used to characterize inflammation physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "hemoglobin": {
     "label": "Hemoglobin",
@@ -3133,9 +2978,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Hemoglobin is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Hemoglobin is a measurable biological variable used to characterize hematology physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "hematocrit": {
     "label": "Hematocrit",
@@ -3144,9 +2989,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Hematocrit is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Hematocrit is a measurable biological variable used to characterize hematology physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "red-blood-cell-count": {
     "label": "Red Blood Cell Count",
@@ -3155,9 +3000,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Red Blood Cell Count is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Red Blood Cell Count is a measurable biological variable used to characterize hematology physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "mcv": {
     "label": "MCV",
@@ -3166,9 +3011,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "MCV is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "MCV is a measurable biological variable used to characterize hematology physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "mch": {
     "label": "MCH",
@@ -3177,9 +3022,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "MCH is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "MCH is a measurable biological variable used to characterize hematology physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "mchc": {
     "label": "MCHC",
@@ -3188,9 +3033,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "MCHC is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "MCHC is a measurable biological variable used to characterize hematology physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "rdw": {
     "label": "RDW",
@@ -3199,9 +3044,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "RDW is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "RDW is a measurable biological variable used to characterize hematology physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "lymphocyte-count": {
     "label": "Lymphocyte Count",
@@ -3210,9 +3055,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Lymphocyte Count is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Lymphocyte Count is a measurable biological variable used to characterize hematology physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "mean-platelet-volume": {
     "label": "Mean Platelet Volume",
@@ -3221,9 +3066,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Mean Platelet Volume is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Mean Platelet Volume is a measurable biological variable used to characterize hematology physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "reticulocyte-count": {
     "label": "Reticulocyte Count",
@@ -3232,9 +3077,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Reticulocyte Count is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Reticulocyte Count is a measurable biological variable used to characterize hematology physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "reticulocyte-hemoglobin": {
     "label": "Reticulocyte Hemoglobin",
@@ -3243,9 +3088,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Reticulocyte Hemoglobin is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Reticulocyte Hemoglobin is a measurable biological variable used to characterize hematology physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "ferritin": {
     "label": "Ferritin",
@@ -3254,9 +3099,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Ferritin is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Ferritin is a measurable biological variable used to characterize hematology physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "serum-iron": {
     "label": "Serum Iron",
@@ -3265,9 +3110,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Serum Iron is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Serum Iron is a measurable biological variable used to characterize hematology physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "transferrin-saturation": {
     "label": "Transferrin Saturation",
@@ -3276,9 +3121,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Transferrin Saturation is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Transferrin Saturation is a measurable biological variable used to characterize hematology physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "tibc": {
     "label": "TIBC",
@@ -3287,9 +3132,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "TIBC is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "TIBC is a measurable biological variable used to characterize hematology physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "transferrin": {
     "label": "Transferrin",
@@ -3298,9 +3143,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Transferrin is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Transferrin is a measurable biological variable used to characterize hematology physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "ldh": {
     "label": "LDH",
@@ -3309,9 +3154,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "LDH is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "LDH is a measurable biological variable used to characterize hematology physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "blood-smear": {
     "label": "Blood Smear",
@@ -3320,9 +3165,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Blood Smear is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Blood Smear is a measurable biological variable used to characterize hematology physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "complete-blood-count": {
     "label": "Complete Blood Count",
@@ -3331,9 +3176,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Complete Blood Count is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Complete Blood Count is a measurable biological variable used to characterize hematology physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "iron-studies-panel": {
     "label": "Iron Studies Panel",
@@ -3342,9 +3187,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Iron Studies Panel is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Iron Studies Panel is a measurable biological variable used to characterize hematology physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "soluble-transferrin-receptor": {
     "label": "Soluble Transferrin Receptor",
@@ -3353,9 +3198,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Soluble Transferrin Receptor is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Soluble Transferrin Receptor is a measurable biological variable used to characterize hematology physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "erythropoietin": {
     "label": "Erythropoietin",
@@ -3364,9 +3209,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Erythropoietin is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Erythropoietin is a measurable biological variable used to characterize hematology physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "hemoglobin-a2": {
     "label": "Hemoglobin A2",
@@ -3375,9 +3220,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Hemoglobin A2 is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Hemoglobin A2 is a measurable biological variable used to characterize hematology physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "fetal-hemoglobin": {
     "label": "Fetal Hemoglobin",
@@ -3386,9 +3231,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Fetal Hemoglobin is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Fetal Hemoglobin is a measurable biological variable used to characterize hematology physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "red-cell-distribution-width": {
     "label": "Red Cell Distribution Width",
@@ -3397,9 +3242,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Red Cell Distribution Width is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Red Cell Distribution Width is a measurable biological variable used to characterize hematology physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "plateletcrit": {
     "label": "Plateletcrit",
@@ -3408,9 +3253,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Plateletcrit is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Plateletcrit is a measurable biological variable used to characterize hematology physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "immature-platelet-fraction": {
     "label": "Immature Platelet Fraction",
@@ -3419,9 +3264,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Immature Platelet Fraction is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Immature Platelet Fraction is a measurable biological variable used to characterize hematology physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "alt": {
     "label": "ALT",
@@ -3430,9 +3275,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "ALT is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "ALT is a measurable biological variable used to characterize liver physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "ast": {
     "label": "AST",
@@ -3441,9 +3286,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "AST is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "AST is a measurable biological variable used to characterize liver physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "ggt": {
     "label": "GGT",
@@ -3452,9 +3297,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "GGT is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "GGT is a measurable biological variable used to characterize liver physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "alkaline-phosphatase": {
     "label": "Alkaline Phosphatase",
@@ -3463,9 +3308,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Alkaline Phosphatase is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Alkaline Phosphatase is a measurable biological variable used to characterize liver physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "total-bilirubin": {
     "label": "Total Bilirubin",
@@ -3474,9 +3319,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Total Bilirubin is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Total Bilirubin is a measurable biological variable used to characterize liver physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "direct-bilirubin": {
     "label": "Direct Bilirubin",
@@ -3485,9 +3330,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Direct Bilirubin is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Direct Bilirubin is a measurable biological variable used to characterize liver physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "albumin": {
     "label": "Albumin",
@@ -3496,9 +3341,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Albumin is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Albumin is a measurable biological variable used to characterize liver physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "total-protein": {
     "label": "Total Protein",
@@ -3507,9 +3352,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Total Protein is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Total Protein is a measurable biological variable used to characterize liver physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "ast-alt-ratio": {
     "label": "AST/ALT Ratio",
@@ -3518,9 +3363,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "AST/ALT Ratio is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "AST/ALT Ratio is a measurable biological variable used to characterize liver physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "ammonia": {
     "label": "Ammonia",
@@ -3529,9 +3374,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Ammonia is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Ammonia is a measurable biological variable used to characterize liver physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "serum-bile-acids": {
     "label": "Serum Bile Acids",
@@ -3540,9 +3385,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Serum Bile Acids is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Serum Bile Acids is a measurable biological variable used to characterize liver physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "liver-chemistry-panel": {
     "label": "Liver Chemistry Panel",
@@ -3551,9 +3396,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Liver Chemistry Panel is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Liver Chemistry Panel is a measurable biological variable used to characterize liver physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "cholinesterase": {
     "label": "Cholinesterase",
@@ -3562,9 +3407,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Cholinesterase is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Cholinesterase is a measurable biological variable used to characterize liver physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "fibrosis-4-index": {
     "label": "Fibrosis-4 Index",
@@ -3573,9 +3418,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Fibrosis-4 Index is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Fibrosis-4 Index is a measurable biological variable used to characterize liver physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "fib-4": {
     "label": "FIB-4",
@@ -3584,9 +3429,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "FIB-4 is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "FIB-4 is a measurable biological variable used to characterize liver physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "nafld-fibrosis-score": {
     "label": "NAFLD Fibrosis Score",
@@ -3595,9 +3440,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "NAFLD Fibrosis Score is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "NAFLD Fibrosis Score is a measurable biological variable used to characterize liver physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "liver-fat-fraction": {
     "label": "Liver Fat Fraction",
@@ -3606,9 +3451,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Liver Fat Fraction is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Liver Fat Fraction is a measurable biological variable used to characterize liver physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "elastography-liver-stiffness": {
     "label": "Elastography Liver Stiffness",
@@ -3617,9 +3462,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Elastography Liver Stiffness is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Elastography Liver Stiffness is a measurable biological variable used to characterize liver physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "bilirubin-indirect": {
     "label": "Bilirubin Indirect",
@@ -3628,9 +3473,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Bilirubin Indirect is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Bilirubin Indirect is a measurable biological variable used to characterize liver physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "5-nucleotidase": {
     "label": "5'-Nucleotidase",
@@ -3639,9 +3484,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "5'-Nucleotidase is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "5'-Nucleotidase is a measurable biological variable used to characterize liver physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "alpha-1-antitrypsin": {
     "label": "Alpha-1-Antitrypsin",
@@ -3650,9 +3495,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Alpha-1-Antitrypsin is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Alpha-1-Antitrypsin is a measurable biological variable used to characterize liver physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "ceruloplasmin": {
     "label": "Ceruloplasmin",
@@ -3661,9 +3506,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Ceruloplasmin is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Ceruloplasmin is a measurable biological variable used to characterize liver physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "prealbumin": {
     "label": "Prealbumin",
@@ -3672,9 +3517,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Prealbumin is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Prealbumin is a measurable biological variable used to characterize liver physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "hepatic-steatosis-index": {
     "label": "Hepatic Steatosis Index",
@@ -3683,9 +3528,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Hepatic Steatosis Index is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Hepatic Steatosis Index is a measurable biological variable used to characterize liver physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "creatinine": {
     "label": "Creatinine",
@@ -3694,9 +3539,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Creatinine is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Creatinine is a measurable biological variable used to characterize kidney physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "estimated-gfr": {
     "label": "Estimated GFR",
@@ -3705,9 +3550,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Estimated GFR is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Estimated GFR is a measurable biological variable used to characterize kidney physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "cystatin-c": {
     "label": "Cystatin C",
@@ -3716,9 +3561,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Cystatin C is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Cystatin C is a measurable biological variable used to characterize kidney physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "blood-urea-nitrogen": {
     "label": "Blood Urea Nitrogen",
@@ -3727,9 +3572,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Blood Urea Nitrogen is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Blood Urea Nitrogen is a measurable biological variable used to characterize kidney physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "urine-albumin-creatinine-ratio": {
     "label": "Urine Albumin/Creatinine Ratio",
@@ -3738,9 +3583,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Urine Albumin/Creatinine Ratio is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Urine Albumin/Creatinine Ratio is a measurable biological variable used to characterize kidney physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "urine-specific-gravity": {
     "label": "Urine Specific Gravity",
@@ -3749,9 +3594,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Urine Specific Gravity is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Urine Specific Gravity is a measurable biological variable used to characterize kidney physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "urine-protein": {
     "label": "Urine Protein",
@@ -3760,9 +3605,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Urine Protein is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Urine Protein is a measurable biological variable used to characterize kidney physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "urinary-creatinine": {
     "label": "Urinary Creatinine",
@@ -3771,9 +3616,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Urinary Creatinine is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Urinary Creatinine is a measurable biological variable used to characterize kidney physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "urine-ph": {
     "label": "Urine pH",
@@ -3782,9 +3627,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Urine pH is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Urine pH is a measurable biological variable used to characterize kidney physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "urine-osmolality": {
     "label": "Urine Osmolality",
@@ -3793,9 +3638,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Urine Osmolality is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Urine Osmolality is a measurable biological variable used to characterize kidney physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "urinary-oxalate": {
     "label": "Urinary Oxalate",
@@ -3804,9 +3649,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Urinary Oxalate is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Urinary Oxalate is a measurable biological variable used to characterize kidney physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "urinary-citrate": {
     "label": "Urinary Citrate",
@@ -3815,9 +3660,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Urinary Citrate is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Urinary Citrate is a measurable biological variable used to characterize kidney physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "urinary-calcium": {
     "label": "Urinary Calcium",
@@ -3826,9 +3671,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Urinary Calcium is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Urinary Calcium is a marker of mineral metabolism or skeletal physiology. It can reflect bone turnover, mineral availability, endocrine control or the structural properties of bone depending on the measurement method.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "urinary-sodium": {
     "label": "Urinary Sodium",
@@ -3837,9 +3682,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Urinary Sodium is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Urinary Sodium is a measurable biological variable used to characterize kidney physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "urinary-urea": {
     "label": "Urinary Urea",
@@ -3848,9 +3693,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Urinary Urea is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Urinary Urea is a measurable biological variable used to characterize kidney physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "urinary-albumin": {
     "label": "Urinary Albumin",
@@ -3859,9 +3704,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Urinary Albumin is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Urinary Albumin is a measurable biological variable used to characterize kidney physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "urinary-protein-creatinine-ratio": {
     "label": "Urinary Protein/Creatinine Ratio",
@@ -3870,9 +3715,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Urinary Protein/Creatinine Ratio is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Urinary Protein/Creatinine Ratio is a measurable biological variable used to characterize kidney physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "fractional-excretion-of-sodium": {
     "label": "Fractional Excretion of Sodium",
@@ -3881,9 +3726,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Fractional Excretion of Sodium is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Fractional Excretion of Sodium is a measurable biological variable used to characterize kidney physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "fractional-excretion-of-urea": {
     "label": "Fractional Excretion of Urea",
@@ -3892,9 +3737,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Fractional Excretion of Urea is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Fractional Excretion of Urea is a measurable biological variable used to characterize kidney physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "kidney-function-panel": {
     "label": "Kidney Function Panel",
@@ -3903,9 +3748,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Kidney Function Panel is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Kidney Function Panel is a measurable biological variable used to characterize kidney physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "urine-output": {
     "label": "Urine Output",
@@ -3914,9 +3759,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Urine Output is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Urine Output is a measurable biological variable used to characterize kidney physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "creatinine-clearance": {
     "label": "Creatinine Clearance",
@@ -3925,9 +3770,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Creatinine Clearance is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Creatinine Clearance is a measurable biological variable used to characterize kidney physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "urinary-magnesium": {
     "label": "Urinary Magnesium",
@@ -3936,9 +3781,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Urinary Magnesium is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Urinary Magnesium is a measurable biological variable used to characterize kidney physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "urinary-potassium": {
     "label": "Urinary Potassium",
@@ -3947,9 +3792,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Urinary Potassium is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Urinary Potassium is a measurable biological variable used to characterize kidney physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "urinary-phosphate": {
     "label": "Urinary Phosphate",
@@ -3958,9 +3803,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Urinary Phosphate is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Urinary Phosphate is a marker of mineral metabolism or skeletal physiology. It can reflect bone turnover, mineral availability, endocrine control or the structural properties of bone depending on the measurement method.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "urinary-sulfate": {
     "label": "Urinary Sulfate",
@@ -3969,9 +3814,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Urinary Sulfate is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Urinary Sulfate is a measurable biological variable used to characterize kidney physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "urinary-ammonium": {
     "label": "Urinary Ammonium",
@@ -3980,9 +3825,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Urinary Ammonium is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Urinary Ammonium is a measurable biological variable used to characterize kidney physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "urinary-ph-profile": {
     "label": "Urinary pH Profile",
@@ -3991,9 +3836,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Urinary pH Profile is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Urinary pH Profile is a measurable biological variable used to characterize kidney physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "albuminuria": {
     "label": "Albuminuria",
@@ -4002,9 +3847,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Albuminuria is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Albuminuria is a measurable biological variable used to characterize kidney physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "serum-sodium": {
     "label": "Serum Sodium",
@@ -4013,9 +3858,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Serum Sodium is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Serum Sodium is a measurable biological variable used to characterize electrolyte physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "serum-potassium": {
     "label": "Serum Potassium",
@@ -4024,9 +3869,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Serum Potassium is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Serum Potassium is a measurable biological variable used to characterize electrolyte physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "serum-chloride": {
     "label": "Serum Chloride",
@@ -4035,9 +3880,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Serum Chloride is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Serum Chloride is a measurable biological variable used to characterize electrolyte physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "serum-bicarbonate": {
     "label": "Serum Bicarbonate",
@@ -4046,9 +3891,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Serum Bicarbonate is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Serum Bicarbonate is a measurable biological variable used to characterize electrolyte physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "total-calcium": {
     "label": "Total Calcium",
@@ -4057,9 +3902,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Total Calcium is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Total Calcium is a marker of mineral metabolism or skeletal physiology. It can reflect bone turnover, mineral availability, endocrine control or the structural properties of bone depending on the measurement method.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "ionized-calcium": {
     "label": "Ionized Calcium",
@@ -4068,9 +3913,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Ionized Calcium is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Ionized Calcium is a marker of mineral metabolism or skeletal physiology. It can reflect bone turnover, mineral availability, endocrine control or the structural properties of bone depending on the measurement method.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "serum-magnesium": {
     "label": "Serum Magnesium",
@@ -4079,9 +3924,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Serum Magnesium is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Serum Magnesium is a measurable biological variable used to characterize electrolyte physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "serum-phosphate": {
     "label": "Serum Phosphate",
@@ -4090,9 +3935,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Serum Phosphate is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Serum Phosphate is a marker of mineral metabolism or skeletal physiology. It can reflect bone turnover, mineral availability, endocrine control or the structural properties of bone depending on the measurement method.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "serum-osmolality": {
     "label": "Serum Osmolality",
@@ -4101,9 +3946,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Serum Osmolality is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Serum Osmolality is a measurable biological variable used to characterize electrolyte physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "plasma-osmolality": {
     "label": "Plasma Osmolality",
@@ -4112,9 +3957,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Plasma Osmolality is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Plasma Osmolality is a measurable biological variable used to characterize electrolyte physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "anion-gap": {
     "label": "Anion Gap",
@@ -4123,9 +3968,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Anion Gap is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Anion Gap is a measurable biological variable used to characterize electrolyte physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "calcium-albumin-correction": {
     "label": "Calcium/Albumin Correction",
@@ -4134,9 +3979,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Calcium/Albumin Correction is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Calcium/Albumin Correction is a marker of mineral metabolism or skeletal physiology. It can reflect bone turnover, mineral availability, endocrine control or the structural properties of bone depending on the measurement method.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "urinary-chloride": {
     "label": "Urinary Chloride",
@@ -4145,9 +3990,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Urinary Chloride is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Urinary Chloride is a measurable biological variable used to characterize electrolyte physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "sweat-sodium": {
     "label": "Sweat Sodium",
@@ -4156,9 +4001,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Sweat Sodium is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Sweat Sodium is a measurable biological variable used to characterize electrolyte physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "sweat-rate": {
     "label": "Sweat Rate",
@@ -4167,9 +4012,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Sweat Rate is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Sweat Rate is a measurable biological variable used to characterize electrolyte physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "hydration-status": {
     "label": "Hydration Status",
@@ -4178,9 +4023,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Hydration Status is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Hydration Status is a measurable biological variable used to characterize electrolyte physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "urine-color": {
     "label": "Urine Color",
@@ -4189,9 +4034,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Urine Color is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Urine Color is a measurable biological variable used to characterize electrolyte physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "plasma-volume": {
     "label": "Plasma Volume",
@@ -4200,9 +4045,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Plasma Volume is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Plasma Volume is a measurable biological variable used to characterize electrolyte physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "serum-electrolyte-panel": {
     "label": "Serum Electrolyte Panel",
@@ -4211,9 +4056,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Serum Electrolyte Panel is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Serum Electrolyte Panel is a measurable biological variable used to characterize electrolyte physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "25-hydroxyvitamin-d": {
     "label": "25-Hydroxyvitamin D",
@@ -4222,9 +4067,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "25-Hydroxyvitamin D is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "25-Hydroxyvitamin D is a marker of mineral metabolism or skeletal physiology. It can reflect bone turnover, mineral availability, endocrine control or the structural properties of bone depending on the measurement method.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "vitamin-b12": {
     "label": "Vitamin B12",
@@ -4233,9 +4078,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Vitamin B12 is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Vitamin B12 is a measurable biological variable used to characterize vitamin physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "methylmalonic-acid": {
     "label": "Methylmalonic Acid",
@@ -4244,9 +4089,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Methylmalonic Acid is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Methylmalonic Acid is a measurable biological variable used to characterize vitamin physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "serum-folate": {
     "label": "Serum Folate",
@@ -4255,9 +4100,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Serum Folate is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Serum Folate is a measurable biological variable used to characterize vitamin physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "red-cell-folate": {
     "label": "Red Cell Folate",
@@ -4266,9 +4111,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Red Cell Folate is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Red Cell Folate is a measurable biological variable used to characterize vitamin physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "thiamine-status": {
     "label": "Thiamine Status",
@@ -4277,9 +4122,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Thiamine Status is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Thiamine Status is a measurable biological variable used to characterize vitamin physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "vitamin-a-retinol": {
     "label": "Vitamin A/Retinol",
@@ -4288,9 +4133,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Vitamin A/Retinol is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Vitamin A/Retinol is a measurable biological variable used to characterize vitamin physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "vitamin-e-alpha-tocopherol": {
     "label": "Vitamin E/Alpha-Tocopherol",
@@ -4299,9 +4144,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Vitamin E/Alpha-Tocopherol is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Vitamin E/Alpha-Tocopherol is a measurable biological variable used to characterize vitamin physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "vitamin-k-status": {
     "label": "Vitamin K Status",
@@ -4310,9 +4155,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Vitamin K Status is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Vitamin K Status is a measurable biological variable used to characterize vitamin physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "vitamin-b6-plp": {
     "label": "Vitamin B6/PLP",
@@ -4321,9 +4166,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Vitamin B6/PLP is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Vitamin B6/PLP is a measurable biological variable used to characterize vitamin physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "whole-blood-thiamine": {
     "label": "Whole Blood Thiamine",
@@ -4332,9 +4177,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Whole Blood Thiamine is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Whole Blood Thiamine is a measurable biological variable used to characterize vitamin physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "riboflavin-status": {
     "label": "Riboflavin Status",
@@ -4343,9 +4188,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Riboflavin Status is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Riboflavin Status is a measurable biological variable used to characterize vitamin physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "plasma-vitamin-c": {
     "label": "Plasma Vitamin C",
@@ -4354,9 +4199,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Plasma Vitamin C is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Plasma Vitamin C is a measurable biological variable used to characterize vitamin physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "lipid-adjusted-vitamin-e": {
     "label": "Lipid-Adjusted Vitamin E",
@@ -4365,9 +4210,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Lipid-Adjusted Vitamin E is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Lipid-Adjusted Vitamin E is a measurable biological variable used to characterize vitamin physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "vitamin-d-25-oh": {
     "label": "Vitamin D 25-OH",
@@ -4376,9 +4221,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Vitamin D 25-OH is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Vitamin D 25-OH is a marker of mineral metabolism or skeletal physiology. It can reflect bone turnover, mineral availability, endocrine control or the structural properties of bone depending on the measurement method.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "vitamin-b1": {
     "label": "Vitamin B1",
@@ -4387,9 +4232,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Vitamin B1 is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Vitamin B1 is a measurable biological variable used to characterize vitamin physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "vitamin-b2": {
     "label": "Vitamin B2",
@@ -4398,9 +4243,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Vitamin B2 is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Vitamin B2 is a measurable biological variable used to characterize vitamin physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "vitamin-b3": {
     "label": "Vitamin B3",
@@ -4409,9 +4254,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Vitamin B3 is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Vitamin B3 is a measurable biological variable used to characterize vitamin physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "vitamin-b5": {
     "label": "Vitamin B5",
@@ -4420,9 +4265,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Vitamin B5 is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Vitamin B5 is a measurable biological variable used to characterize vitamin physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "biotin-status": {
     "label": "Biotin Status",
@@ -4431,9 +4276,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Biotin Status is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Biotin Status is a measurable biological variable used to characterize vitamin physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "vitamin-k1": {
     "label": "Vitamin K1",
@@ -4442,9 +4287,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Vitamin K1 is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Vitamin K1 is a measurable biological variable used to characterize vitamin physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "vitamin-k2-status": {
     "label": "Vitamin K2 Status",
@@ -4453,9 +4298,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Vitamin K2 Status is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Vitamin K2 Status is a measurable biological variable used to characterize vitamin physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "vitamin-a-status": {
     "label": "Vitamin A Status",
@@ -4464,9 +4309,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Vitamin A Status is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Vitamin A Status is a measurable biological variable used to characterize vitamin physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "vitamin-e-status": {
     "label": "Vitamin E Status",
@@ -4475,9 +4320,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Vitamin E Status is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Vitamin E Status is a measurable biological variable used to characterize vitamin physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "vitamin-c-status": {
     "label": "Vitamin C Status",
@@ -4486,9 +4331,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Vitamin C Status is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Vitamin C Status is a measurable biological variable used to characterize vitamin physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "folate-status": {
     "label": "Folate Status",
@@ -4497,9 +4342,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Folate Status is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Folate Status is a measurable biological variable used to characterize vitamin physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "b12-status": {
     "label": "B12 Status",
@@ -4508,9 +4353,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "B12 Status is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "B12 Status is a measurable biological variable used to characterize vitamin physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "homocysteine-as-functional-b-vitamin-marker": {
     "label": "Homocysteine as Functional B-Vitamin Marker",
@@ -4519,9 +4364,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Homocysteine as Functional B-Vitamin Marker is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Homocysteine as Functional B-Vitamin Marker is a measurable biological variable used to characterize vitamin physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "serum-zinc": {
     "label": "Serum Zinc",
@@ -4530,9 +4375,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Serum Zinc is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Serum Zinc is a measurable biological variable used to characterize mineral physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "serum-copper": {
     "label": "Serum Copper",
@@ -4541,9 +4386,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Serum Copper is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Serum Copper is a measurable biological variable used to characterize mineral physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "serum-selenium": {
     "label": "Serum Selenium",
@@ -4552,9 +4397,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Serum Selenium is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Serum Selenium is a measurable biological variable used to characterize mineral physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "urinary-iodine": {
     "label": "Urinary Iodine",
@@ -4563,9 +4408,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Urinary Iodine is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Urinary Iodine is a measurable biological variable used to characterize mineral physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "rbc-magnesium": {
     "label": "RBC Magnesium",
@@ -4574,9 +4419,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "RBC Magnesium is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "RBC Magnesium is a measurable biological variable used to characterize mineral physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "copper-zinc-ratio": {
     "label": "Copper/Zinc Ratio",
@@ -4585,9 +4430,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Copper/Zinc Ratio is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Copper/Zinc Ratio is a measurable biological variable used to characterize mineral physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "urinary-selenium": {
     "label": "Urinary Selenium",
@@ -4596,9 +4441,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Urinary Selenium is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Urinary Selenium is a measurable biological variable used to characterize mineral physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "serum-manganese": {
     "label": "Serum Manganese",
@@ -4607,9 +4452,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Serum Manganese is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Serum Manganese is a measurable biological variable used to characterize mineral physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "serum-chromium": {
     "label": "Serum Chromium",
@@ -4618,9 +4463,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Serum Chromium is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Serum Chromium is a measurable biological variable used to characterize mineral physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "serum-molybdenum": {
     "label": "Serum Molybdenum",
@@ -4629,9 +4474,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Serum Molybdenum is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Serum Molybdenum is a measurable biological variable used to characterize mineral physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "serum-boron": {
     "label": "Serum Boron",
@@ -4640,9 +4485,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Serum Boron is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Serum Boron is a measurable biological variable used to characterize mineral physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "whole-blood-zinc": {
     "label": "Whole Blood Zinc",
@@ -4651,9 +4496,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Whole Blood Zinc is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Whole Blood Zinc is a measurable biological variable used to characterize mineral physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "whole-blood-selenium": {
     "label": "Whole Blood Selenium",
@@ -4662,9 +4507,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Whole Blood Selenium is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Whole Blood Selenium is a measurable biological variable used to characterize mineral physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "urinary-zinc": {
     "label": "Urinary Zinc",
@@ -4673,9 +4518,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Urinary Zinc is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Urinary Zinc is a measurable biological variable used to characterize mineral physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "urinary-copper": {
     "label": "Urinary Copper",
@@ -4684,9 +4529,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Urinary Copper is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Urinary Copper is a measurable biological variable used to characterize mineral physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "selenoprotein-p": {
     "label": "Selenoprotein P",
@@ -4695,9 +4540,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Selenoprotein P is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Selenoprotein P is a measurable biological variable used to characterize mineral physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "iodine-excretion": {
     "label": "Iodine Excretion",
@@ -4706,9 +4551,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Iodine Excretion is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Iodine Excretion is a measurable biological variable used to characterize mineral physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "iron-status-panel": {
     "label": "Iron Status Panel",
@@ -4717,9 +4562,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Iron Status Panel is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Iron Status Panel is a measurable biological variable used to characterize mineral physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "mineral-status-panel": {
     "label": "Mineral Status Panel",
@@ -4728,9 +4573,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Mineral Status Panel is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Mineral Status Panel is a measurable biological variable used to characterize mineral physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "thyroglobulin-antibodies": {
     "label": "Thyroglobulin Antibodies",
@@ -4739,9 +4584,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Thyroglobulin Antibodies is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Thyroglobulin Antibodies is a measurable biological variable used to characterize thyroid physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "thyroid-function-panel": {
     "label": "Thyroid Function Panel",
@@ -4750,9 +4595,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Thyroid Function Panel is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Thyroid Function Panel is an endocrine measurement used to characterize hormone production, transport, signaling or feedback. Concentrations vary with circadian timing, age, sex, binding proteins, nutritional state and the physiological or pharmacological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "thyroid-ultrasound-volume": {
     "label": "Thyroid Ultrasound Volume",
@@ -4761,9 +4606,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Thyroid Ultrasound Volume is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Thyroid Ultrasound Volume is an endocrine measurement used to characterize hormone production, transport, signaling or feedback. Concentrations vary with circadian timing, age, sex, binding proteins, nutritional state and the physiological or pharmacological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "thyroid-peroxidase-antibodies": {
     "label": "Thyroid Peroxidase Antibodies",
@@ -4772,9 +4617,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Thyroid Peroxidase Antibodies is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Thyroid Peroxidase Antibodies is an endocrine measurement used to characterize hormone production, transport, signaling or feedback. Concentrations vary with circadian timing, age, sex, binding proteins, nutritional state and the physiological or pharmacological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "free-t4-free-t3-context": {
     "label": "Free T4/Free T3 Context",
@@ -4783,9 +4628,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Free T4/Free T3 Context is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Free T4/Free T3 Context is an endocrine measurement used to characterize hormone production, transport, signaling or feedback. Concentrations vary with circadian timing, age, sex, binding proteins, nutritional state and the physiological or pharmacological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "thyroid-stimulating-immunoglobulin": {
     "label": "Thyroid Stimulating Immunoglobulin",
@@ -4794,9 +4639,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Thyroid Stimulating Immunoglobulin is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Thyroid Stimulating Immunoglobulin is an endocrine measurement used to characterize hormone production, transport, signaling or feedback. Concentrations vary with circadian timing, age, sex, binding proteins, nutritional state and the physiological or pharmacological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "p1np": {
     "label": "P1NP",
@@ -4805,9 +4650,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "P1NP is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "P1NP is a measurable biological variable used to characterize bone physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "ctx": {
     "label": "CTX",
@@ -4816,9 +4661,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "CTX is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "CTX is a measurable biological variable used to characterize bone physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "osteocalcin": {
     "label": "Osteocalcin",
@@ -4827,9 +4672,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Osteocalcin is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Osteocalcin is a measurable biological variable used to characterize bone physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "bone-specific-alkaline-phosphatase": {
     "label": "Bone-Specific Alkaline Phosphatase",
@@ -4838,9 +4683,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Bone-Specific Alkaline Phosphatase is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Bone-Specific Alkaline Phosphatase is a marker of mineral metabolism or skeletal physiology. It can reflect bone turnover, mineral availability, endocrine control or the structural properties of bone depending on the measurement method.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "parathyroid-hormone": {
     "label": "Parathyroid Hormone",
@@ -4849,9 +4694,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Parathyroid Hormone is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Parathyroid Hormone is an endocrine measurement used to characterize hormone production, transport, signaling or feedback. Concentrations vary with circadian timing, age, sex, binding proteins, nutritional state and the physiological or pharmacological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "vitamin-k-dependent-protein-status": {
     "label": "Vitamin K-Dependent Protein Status",
@@ -4860,9 +4705,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Vitamin K-Dependent Protein Status is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Vitamin K-Dependent Protein Status is a measurable biological variable used to characterize bone physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "bone-turnover-marker-panel": {
     "label": "Bone Turnover Marker Panel",
@@ -4871,9 +4716,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Bone Turnover Marker Panel is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Bone Turnover Marker Panel is a marker of mineral metabolism or skeletal physiology. It can reflect bone turnover, mineral availability, endocrine control or the structural properties of bone depending on the measurement method.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "fracture-risk-estimate": {
     "label": "Fracture Risk Estimate",
@@ -4882,9 +4727,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Fracture Risk Estimate is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Fracture Risk Estimate is a measurable biological variable used to characterize bone physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "bone-pain-score": {
     "label": "Bone Pain Score",
@@ -4893,9 +4738,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Bone Pain Score is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Bone Pain Score is a marker of mineral metabolism or skeletal physiology. It can reflect bone turnover, mineral availability, endocrine control or the structural properties of bone depending on the measurement method.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "urinary-calcium-creatinine-ratio": {
     "label": "Urinary Calcium/Creatinine Ratio",
@@ -4904,9 +4749,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Urinary Calcium/Creatinine Ratio is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Urinary Calcium/Creatinine Ratio is a marker of mineral metabolism or skeletal physiology. It can reflect bone turnover, mineral availability, endocrine control or the structural properties of bone depending on the measurement method.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "sclerostin": {
     "label": "Sclerostin",
@@ -4915,9 +4760,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Sclerostin is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Sclerostin is a measurable biological variable used to characterize bone physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "rankl": {
     "label": "RANKL",
@@ -4926,9 +4771,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "RANKL is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "RANKL is a measurable biological variable used to characterize bone physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "osteoprotegerin": {
     "label": "Osteoprotegerin",
@@ -4937,9 +4782,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Osteoprotegerin is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Osteoprotegerin is a measurable biological variable used to characterize bone physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "bone-resorption-marker": {
     "label": "Bone Resorption Marker",
@@ -4948,9 +4793,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Bone Resorption Marker is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Bone Resorption Marker is a marker of mineral metabolism or skeletal physiology. It can reflect bone turnover, mineral availability, endocrine control or the structural properties of bone depending on the measurement method.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "bone-formation-marker": {
     "label": "Bone Formation Marker",
@@ -4959,9 +4804,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Bone Formation Marker is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Bone Formation Marker is a marker of mineral metabolism or skeletal physiology. It can reflect bone turnover, mineral availability, endocrine control or the structural properties of bone depending on the measurement method.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "bone-turnover-profile": {
     "label": "Bone Turnover Profile",
@@ -4970,9 +4815,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Bone Turnover Profile is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Bone Turnover Profile is a marker of mineral metabolism or skeletal physiology. It can reflect bone turnover, mineral availability, endocrine control or the structural properties of bone depending on the measurement method.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "prealbumin-transthyretin": {
     "label": "Prealbumin/Transthyretin",
@@ -4981,9 +4826,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Prealbumin/Transthyretin is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Prealbumin/Transthyretin is a measurable biological variable used to characterize nutrition physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "transferrin-nutrition-context": {
     "label": "Transferrin Nutrition Context",
@@ -4992,9 +4837,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Transferrin Nutrition Context is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Transferrin Nutrition Context is a measurable biological variable used to characterize nutrition physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "dietary-protein-intake": {
     "label": "Dietary Protein Intake",
@@ -5003,9 +4848,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Dietary Protein Intake is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Dietary Protein Intake is a measurable biological variable used to characterize nutrition physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "energy-availability": {
     "label": "Energy Availability",
@@ -5014,9 +4859,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Energy Availability is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Energy Availability is a measurable biological variable used to characterize nutrition physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "skin-carotenoid-score": {
     "label": "Skin Carotenoid Score",
@@ -5025,9 +4870,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Skin Carotenoid Score is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Skin Carotenoid Score is a measurable biological variable used to characterize nutrition physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "nutrient-status-panel": {
     "label": "Nutrient Status Panel",
@@ -5036,9 +4881,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Nutrient Status Panel is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Nutrient Status Panel is a measurable biological variable used to characterize nutrition physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "plasma-amino-acid-profile": {
     "label": "Plasma Amino Acid Profile",
@@ -5047,9 +4892,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Plasma Amino Acid Profile is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Plasma Amino Acid Profile is a measurable biological variable used to characterize nutrition physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "omega-3-index": {
     "label": "Omega-3 Index",
@@ -5058,9 +4903,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Omega-3 Index is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Omega-3 Index is a measurable biological variable used to characterize nutrition physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "epa-in-blood": {
     "label": "EPA in Blood",
@@ -5069,9 +4914,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "EPA in Blood is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "EPA in Blood is a measurable biological variable used to characterize nutrition physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "dha-in-blood": {
     "label": "DHA in Blood",
@@ -5080,9 +4925,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "DHA in Blood is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "DHA in Blood is a measurable biological variable used to characterize nutrition physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "arachidonic-acid-epa-ratio": {
     "label": "Arachidonic Acid/EPA Ratio",
@@ -5091,9 +4936,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Arachidonic Acid/EPA Ratio is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Arachidonic Acid/EPA Ratio is a measurable biological variable used to characterize nutrition physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "vitamin-status-panel": {
     "label": "Vitamin Status Panel",
@@ -5102,9 +4947,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Vitamin Status Panel is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Vitamin Status Panel is a measurable biological variable used to characterize nutrition physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "fatty-acid-profile": {
     "label": "Fatty Acid Profile",
@@ -5113,9 +4958,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Fatty Acid Profile is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Fatty Acid Profile is a measurable biological variable used to characterize nutrition physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "dietary-fiber-intake": {
     "label": "Dietary Fiber Intake",
@@ -5124,9 +4969,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Dietary Fiber Intake is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Dietary Fiber Intake is a measurable biological variable used to characterize nutrition physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "food-intake-record": {
     "label": "Food Intake Record",
@@ -5135,9 +4980,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Food Intake Record is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Food Intake Record is a measurable biological variable used to characterize nutrition physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "body-energy-availability": {
     "label": "Body Energy Availability",
@@ -5146,9 +4991,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Body Energy Availability is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Body Energy Availability is a measurable biological variable used to characterize nutrition physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "body-water": {
     "label": "Body Water",
@@ -5157,9 +5002,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Body Water is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Body Water is a measurable biological variable used to characterize hydration physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "skin-temperature": {
     "label": "Skin Temperature",
@@ -5168,9 +5013,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Skin Temperature is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Skin Temperature is a measurable biological variable used to characterize hydration physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "core-body-temperature": {
     "label": "Core Body Temperature",
@@ -5179,9 +5024,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Core Body Temperature is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Core Body Temperature is a measurable biological variable used to characterize hydration physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "body-mass-change-during-exercise": {
     "label": "Body Mass Change During Exercise",
@@ -5190,9 +5035,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Body Mass Change During Exercise is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Body Mass Change During Exercise is a measurable biological variable used to characterize hydration physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "thirst-rating": {
     "label": "Thirst Rating",
@@ -5201,9 +5046,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Thirst Rating is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Thirst Rating is a measurable biological variable used to characterize hydration physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "plasma-sodium": {
     "label": "Plasma Sodium",
@@ -5212,9 +5057,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Plasma Sodium is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Plasma Sodium is a measurable biological variable used to characterize hydration physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "urinary-sodium-concentration": {
     "label": "Urinary Sodium Concentration",
@@ -5223,9 +5068,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Urinary Sodium Concentration is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Urinary Sodium Concentration is a measurable biological variable used to characterize hydration physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "gsh-gssg-ratio": {
     "label": "GSH/GSSG Ratio",
@@ -5234,9 +5079,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "GSH/GSSG Ratio is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "GSH/GSSG Ratio is a measurable biological variable used to characterize redox physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "f2-isoprostanes": {
     "label": "F2-Isoprostanes",
@@ -5245,9 +5090,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "F2-Isoprostanes is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "F2-Isoprostanes is a measurable biological variable used to characterize redox physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "8-ohdg": {
     "label": "8-OHdG",
@@ -5256,9 +5101,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "8-OHdG is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "8-OHdG is a measurable biological variable used to characterize redox physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "malondialdehyde": {
     "label": "Malondialdehyde",
@@ -5267,9 +5112,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Malondialdehyde is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Malondialdehyde is a measurable biological variable used to characterize redox physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "total-antioxidant-capacity": {
     "label": "Total Antioxidant Capacity",
@@ -5278,9 +5123,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Total Antioxidant Capacity is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Total Antioxidant Capacity is a measurable biological variable used to characterize redox physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "urinary-nitrate-nitrite": {
     "label": "Urinary Nitrate/Nitrite",
@@ -5289,9 +5134,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Urinary Nitrate/Nitrite is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Urinary Nitrate/Nitrite is a measurable biological variable used to characterize redox physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "glutathione-peroxidase-activity": {
     "label": "Glutathione Peroxidase Activity",
@@ -5300,9 +5145,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Glutathione Peroxidase Activity is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Glutathione Peroxidase Activity is a measurable biological variable used to characterize redox physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "superoxide-dismutase-activity": {
     "label": "Superoxide Dismutase Activity",
@@ -5311,9 +5156,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Superoxide Dismutase Activity is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Superoxide Dismutase Activity is a measurable biological variable used to characterize redox physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "catalase-activity": {
     "label": "Catalase Activity",
@@ -5322,9 +5167,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Catalase Activity is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Catalase Activity is a measurable biological variable used to characterize redox physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "protein-carbonyls": {
     "label": "Protein Carbonyls",
@@ -5333,9 +5178,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Protein Carbonyls is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Protein Carbonyls is a measurable biological variable used to characterize redox physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "4-hne": {
     "label": "4-HNE",
@@ -5344,9 +5189,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "4-HNE is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "4-HNE is a measurable biological variable used to characterize redox physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "oxidative-dna-damage": {
     "label": "Oxidative DNA Damage",
@@ -5355,9 +5200,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Oxidative DNA Damage is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Oxidative DNA Damage is a measurable biological variable used to characterize redox physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "lipid-peroxidation-marker-panel": {
     "label": "Lipid Peroxidation Marker Panel",
@@ -5366,9 +5211,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Lipid Peroxidation Marker Panel is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Lipid Peroxidation Marker Panel is a measurable biological variable used to characterize redox physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "redox-status-panel": {
     "label": "Redox Status Panel",
@@ -5377,9 +5222,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Redox Status Panel is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Redox Status Panel is a measurable biological variable used to characterize redox physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "fecal-calprotectin": {
     "label": "Fecal Calprotectin",
@@ -5388,9 +5233,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Fecal Calprotectin is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Fecal Calprotectin is a marker associated with inflammatory or immune signaling. It can reflect activation of a particular pathway without identifying the cause, tissue source or clinical significance of that activation.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "stool-frequency": {
     "label": "Stool Frequency",
@@ -5399,9 +5244,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Stool Frequency is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Stool Frequency is a gastrointestinal or microbiome-related measurement. It describes either the composition/activity of intestinal microorganisms or a measurable consequence of digestion, fermentation and host–microbe interaction.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "bristol-stool-form-scale": {
     "label": "Bristol Stool Form Scale",
@@ -5410,9 +5255,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Bristol Stool Form Scale is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Bristol Stool Form Scale is a gastrointestinal or microbiome-related measurement. It describes either the composition/activity of intestinal microorganisms or a measurable consequence of digestion, fermentation and host–microbe interaction.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "gut-transit-time": {
     "label": "Gut Transit Time",
@@ -5421,9 +5266,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Gut Transit Time is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Gut Transit Time is a measurable biological variable used to characterize gut physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "fecal-short-chain-fatty-acids": {
     "label": "Fecal Short-Chain Fatty Acids",
@@ -5432,9 +5277,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Fecal Short-Chain Fatty Acids is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Fecal Short-Chain Fatty Acids is a gastrointestinal or microbiome-related measurement. It describes either the composition/activity of intestinal microorganisms or a measurable consequence of digestion, fermentation and host–microbe interaction.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "gut-microbiome-diversity": {
     "label": "Gut Microbiome Diversity",
@@ -5443,9 +5288,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Gut Microbiome Diversity is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Gut Microbiome Diversity is a gastrointestinal or microbiome-related measurement. It describes either the composition/activity of intestinal microorganisms or a measurable consequence of digestion, fermentation and host–microbe interaction.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "fecal-secretory-iga": {
     "label": "Fecal Secretory IgA",
@@ -5454,9 +5299,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Fecal Secretory IgA is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Fecal Secretory IgA is a gastrointestinal or microbiome-related measurement. It describes either the composition/activity of intestinal microorganisms or a measurable consequence of digestion, fermentation and host–microbe interaction.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "zonulin-assay-dependent": {
     "label": "Zonulin (Assay-Dependent)",
@@ -5465,9 +5310,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Zonulin (Assay-Dependent) is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Zonulin (Assay-Dependent) is a measurable biological variable used to characterize gut physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "lactulose-mannitol-test": {
     "label": "Lactulose/Mannitol Test",
@@ -5476,9 +5321,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Lactulose/Mannitol Test is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Lactulose/Mannitol Test is a measurable biological variable used to characterize gut physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "breath-hydrogen": {
     "label": "Breath Hydrogen",
@@ -5487,9 +5332,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Breath Hydrogen is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Breath Hydrogen is a measurable biological variable used to characterize gut physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "breath-methane": {
     "label": "Breath Methane",
@@ -5498,9 +5343,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Breath Methane is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Breath Methane is a measurable biological variable used to characterize gut physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "fecal-elastase": {
     "label": "Fecal Elastase",
@@ -5509,9 +5354,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Fecal Elastase is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Fecal Elastase is a gastrointestinal or microbiome-related measurement. It describes either the composition/activity of intestinal microorganisms or a measurable consequence of digestion, fermentation and host–microbe interaction.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "fecal-fat": {
     "label": "Fecal Fat",
@@ -5520,9 +5365,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Fecal Fat is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Fecal Fat is a gastrointestinal or microbiome-related measurement. It describes either the composition/activity of intestinal microorganisms or a measurable consequence of digestion, fermentation and host–microbe interaction.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "stool-ph": {
     "label": "Stool pH",
@@ -5531,9 +5376,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Stool pH is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Stool pH is a gastrointestinal or microbiome-related measurement. It describes either the composition/activity of intestinal microorganisms or a measurable consequence of digestion, fermentation and host–microbe interaction.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "fecal-occult-blood": {
     "label": "Fecal Occult Blood",
@@ -5542,9 +5387,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Fecal Occult Blood is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Fecal Occult Blood is a gastrointestinal or microbiome-related measurement. It describes either the composition/activity of intestinal microorganisms or a measurable consequence of digestion, fermentation and host–microbe interaction.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "stool-pathogen-panel": {
     "label": "Stool Pathogen Panel",
@@ -5553,9 +5398,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Stool Pathogen Panel is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Stool Pathogen Panel is a gastrointestinal or microbiome-related measurement. It describes either the composition/activity of intestinal microorganisms or a measurable consequence of digestion, fermentation and host–microbe interaction.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "breath-methane-hydrogen": {
     "label": "Breath Methane/Hydrogen",
@@ -5564,9 +5409,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Breath Methane/Hydrogen is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Breath Methane/Hydrogen is a measurable biological variable used to characterize gut physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "fecal-bile-acids": {
     "label": "Fecal Bile Acids",
@@ -5575,9 +5420,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Fecal Bile Acids is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Fecal Bile Acids is a gastrointestinal or microbiome-related measurement. It describes either the composition/activity of intestinal microorganisms or a measurable consequence of digestion, fermentation and host–microbe interaction.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "stool-microbiome-profile": {
     "label": "Stool Microbiome Profile",
@@ -5586,9 +5431,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Stool Microbiome Profile is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Stool Microbiome Profile is a gastrointestinal or microbiome-related measurement. It describes either the composition/activity of intestinal microorganisms or a measurable consequence of digestion, fermentation and host–microbe interaction.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "gut-permeability-test": {
     "label": "Gut Permeability Test",
@@ -5597,9 +5442,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Gut Permeability Test is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Gut Permeability Test is a measurable biological variable used to characterize gut physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "stool-scfa-profile": {
     "label": "Stool SCFA Profile",
@@ -5608,9 +5453,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Stool SCFA Profile is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Stool SCFA Profile is a gastrointestinal or microbiome-related measurement. It describes either the composition/activity of intestinal microorganisms or a measurable consequence of digestion, fermentation and host–microbe interaction.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "microbiome-metabolite-profile": {
     "label": "Microbiome Metabolite Profile",
@@ -5619,9 +5464,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Microbiome Metabolite Profile is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Microbiome Metabolite Profile is a gastrointestinal or microbiome-related measurement. It describes either the composition/activity of intestinal microorganisms or a measurable consequence of digestion, fermentation and host–microbe interaction.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "bowel-movement-frequency": {
     "label": "Bowel Movement Frequency",
@@ -5630,9 +5475,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Bowel Movement Frequency is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Bowel Movement Frequency is a measurable biological variable used to characterize gut physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "bristol-stool-score": {
     "label": "Bristol Stool Score",
@@ -5641,9 +5486,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Bristol Stool Score is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Bristol Stool Score is a gastrointestinal or microbiome-related measurement. It describes either the composition/activity of intestinal microorganisms or a measurable consequence of digestion, fermentation and host–microbe interaction.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "salivary-iga": {
     "label": "Salivary IgA",
@@ -5652,9 +5497,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Salivary IgA is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Salivary IgA is a measurable biological variable used to characterize gut physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "oral-microbiome-profile": {
     "label": "Oral Microbiome Profile",
@@ -5663,9 +5508,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Oral Microbiome Profile is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Oral Microbiome Profile is a gastrointestinal or microbiome-related measurement. It describes either the composition/activity of intestinal microorganisms or a measurable consequence of digestion, fermentation and host–microbe interaction.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "periodontal-pocket-depth": {
     "label": "Periodontal Pocket Depth",
@@ -5674,9 +5519,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Periodontal Pocket Depth is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Periodontal Pocket Depth is a physiological or exercise-performance measure. It captures a defined aspect of energy metabolism, neuromuscular function or tissue response, and the test protocol determines what the number actually represents.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "gingival-bleeding-index": {
     "label": "Gingival Bleeding Index",
@@ -5685,9 +5530,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Gingival Bleeding Index is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Gingival Bleeding Index is a measurable biological variable used to characterize gut physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "salivary-flow-rate": {
     "label": "Salivary Flow Rate",
@@ -5696,9 +5541,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Salivary Flow Rate is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Salivary Flow Rate is a measurable biological variable used to characterize gut physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "oral-volatile-sulfur-compounds": {
     "label": "Oral Volatile Sulfur Compounds",
@@ -5707,9 +5552,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Oral Volatile Sulfur Compounds is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Oral Volatile Sulfur Compounds is a measurable biological variable used to characterize gut physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "creatine-kinase": {
     "label": "Creatine Kinase",
@@ -5718,9 +5563,9 @@ export const biomarkers = {
     "unit": "U/L",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Creatine Kinase is a measurable outcome. Reference intervals and clinical meaning depend on the testing method and context.",
+    "description": "Creatine kinase is an intracellular enzyme involved in the phosphocreatine energy-buffering system. Blood CK is commonly used as a marker of muscle-cell membrane disruption, especially after unfamiliar or high-volume exercise, rather than as a direct measure of muscle growth.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as U/L.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "muscle-soreness": {
     "label": "Muscle Soreness (DOMS)",
@@ -5729,9 +5574,9 @@ export const biomarkers = {
     "unit": "scale 1–10",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Muscle Soreness (DOMS) is a measurable outcome. Reference intervals and clinical meaning depend on the testing method and context.",
+    "description": "Muscle Soreness (DOMS) is a measurable biological variable used to characterize recovery physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as scale 1–10.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "sleep-quality": {
     "label": "Sleep Quality",
@@ -5740,9 +5585,9 @@ export const biomarkers = {
     "unit": "scale-specific",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Sleep Quality is a measurable outcome. Reference intervals and clinical meaning depend on the testing method and context.",
+    "description": "Sleep Quality is a functional outcome measured with a defined behavioral, cognitive or sleep assessment. Unlike a single biochemical concentration, its value depends heavily on the exact test, task difficulty, timing and baseline performance.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as scale-specific.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "sleep-efficiency": {
     "label": "Sleep Efficiency",
@@ -5751,9 +5596,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Sleep Efficiency is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Sleep Efficiency is a functional outcome measured with a defined behavioral, cognitive or sleep assessment. Unlike a single biochemical concentration, its value depends heavily on the exact test, task difficulty, timing and baseline performance.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "sleep-onset-latency": {
     "label": "Sleep Onset Latency",
@@ -5762,9 +5607,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Sleep Onset Latency is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Sleep Onset Latency is a functional outcome measured with a defined behavioral, cognitive or sleep assessment. Unlike a single biochemical concentration, its value depends heavily on the exact test, task difficulty, timing and baseline performance.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "total-sleep-time": {
     "label": "Total Sleep Time",
@@ -5773,9 +5618,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Total Sleep Time is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Total Sleep Time is a functional outcome measured with a defined behavioral, cognitive or sleep assessment. Unlike a single biochemical concentration, its value depends heavily on the exact test, task difficulty, timing and baseline performance.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "wake-after-sleep-onset": {
     "label": "Wake After Sleep Onset",
@@ -5784,9 +5629,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Wake After Sleep Onset is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Wake After Sleep Onset is a functional outcome measured with a defined behavioral, cognitive or sleep assessment. Unlike a single biochemical concentration, its value depends heavily on the exact test, task difficulty, timing and baseline performance.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "rem-sleep-duration": {
     "label": "REM Sleep Duration",
@@ -5795,9 +5640,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "REM Sleep Duration is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "REM Sleep Duration is a functional outcome measured with a defined behavioral, cognitive or sleep assessment. Unlike a single biochemical concentration, its value depends heavily on the exact test, task difficulty, timing and baseline performance.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "slow-wave-sleep-duration": {
     "label": "Slow-Wave Sleep Duration",
@@ -5806,9 +5651,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Slow-Wave Sleep Duration is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Slow-Wave Sleep Duration is a functional outcome measured with a defined behavioral, cognitive or sleep assessment. Unlike a single biochemical concentration, its value depends heavily on the exact test, task difficulty, timing and baseline performance.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "perceived-stress-score": {
     "label": "Perceived Stress Score",
@@ -5817,9 +5662,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Perceived Stress Score is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Perceived Stress Score is a measurable biological variable used to characterize recovery physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "fatigue-score": {
     "label": "Fatigue Score",
@@ -5828,9 +5673,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Fatigue Score is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Fatigue Score is a measurable biological variable used to characterize recovery physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "recovery-perception": {
     "label": "Recovery Perception",
@@ -5839,9 +5684,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Recovery Perception is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Recovery Perception is a measurable biological variable used to characterize recovery physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "exercise-recovery-time": {
     "label": "Exercise Recovery Time",
@@ -5850,9 +5695,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Exercise Recovery Time is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Exercise Recovery Time is a measurable biological variable used to characterize recovery physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "subjective-energy-score": {
     "label": "Subjective Energy Score",
@@ -5861,9 +5706,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Subjective Energy Score is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Subjective Energy Score is a measurable biological variable used to characterize recovery physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "actigraphy-sleep-metrics": {
     "label": "Actigraphy Sleep Metrics",
@@ -5872,9 +5717,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Actigraphy Sleep Metrics is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Actigraphy Sleep Metrics is a functional outcome measured with a defined behavioral, cognitive or sleep assessment. Unlike a single biochemical concentration, its value depends heavily on the exact test, task difficulty, timing and baseline performance.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "polysomnography-ahi": {
     "label": "Polysomnography AHI",
@@ -5883,9 +5728,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Polysomnography AHI is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Polysomnography AHI is a measurable biological variable used to characterize recovery physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "sleep-oxygen-desaturation-index": {
     "label": "Sleep Oxygen Desaturation Index",
@@ -5894,9 +5739,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Sleep Oxygen Desaturation Index is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Sleep Oxygen Desaturation Index is a functional outcome measured with a defined behavioral, cognitive or sleep assessment. Unlike a single biochemical concentration, its value depends heavily on the exact test, task difficulty, timing and baseline performance.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "physical-function-score": {
     "label": "Physical Function Score",
@@ -5905,9 +5750,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Physical Function Score is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Physical Function Score is a measurable biological variable used to characterize recovery physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "quality-of-life-score": {
     "label": "Quality of Life Score",
@@ -5916,9 +5761,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Quality of Life Score is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Quality of Life Score is a measurable biological variable used to characterize recovery physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "joint-pain-score": {
     "label": "Joint Pain Score",
@@ -5927,9 +5772,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Joint Pain Score is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Joint Pain Score is a measurable biological variable used to characterize recovery physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "perceived-recovery-scale": {
     "label": "Perceived Recovery Scale",
@@ -5938,9 +5783,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Perceived Recovery Scale is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Perceived Recovery Scale is a measurable biological variable used to characterize recovery physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "delayed-onset-muscle-soreness": {
     "label": "Delayed-Onset Muscle Soreness",
@@ -5949,9 +5794,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Delayed-Onset Muscle Soreness is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Delayed-Onset Muscle Soreness is a measurable biological variable used to characterize recovery physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "training-readiness-score": {
     "label": "Training Readiness Score",
@@ -5960,9 +5805,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Training Readiness Score is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Training Readiness Score is a measurable biological variable used to characterize recovery physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "resting-respiratory-rate": {
     "label": "Resting Respiratory Rate",
@@ -5971,9 +5816,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Resting Respiratory Rate is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Resting Respiratory Rate is a measurable biological variable used to characterize recovery physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "stress-questionnaire-score": {
     "label": "Stress Questionnaire Score",
@@ -5982,9 +5827,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Stress Questionnaire Score is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Stress Questionnaire Score is a measurable biological variable used to characterize recovery physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "bdnf": {
     "label": "BDNF",
@@ -5993,9 +5838,9 @@ export const biomarkers = {
     "unit": "ng/mL",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "BDNF is a measurable outcome. Reference intervals and clinical meaning depend on the testing method and context.",
+    "description": "BDNF is a measurable biological variable used to characterize cognitive physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as ng/mL.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "reaction-time": {
     "label": "Reaction Time",
@@ -6004,31 +5849,9 @@ export const biomarkers = {
     "unit": "ms",
     "direction": "lower-better",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Reaction Time is a measurable outcome. Reference intervals and clinical meaning depend on the testing method and context.",
+    "description": "Reaction Time is a functional outcome measured with a defined behavioral, cognitive or sleep assessment. Unlike a single biochemical concentration, its value depends heavily on the exact test, task difficulty, timing and baseline performance.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as lower better and records the measurement unit as ms.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
-  },
-  "memory-test-score": {
-    "label": "Memory Test Score",
-    "short": "Memory Test Score",
-    "category": "cognitive",
-    "unit": "assay- or protocol-dependent",
-    "direction": "context-dependent",
-    "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Memory Test Score is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
-    "sources": [],
-    "reviewStatus": "needs-review"
-  },
-  "attention-test-score": {
-    "label": "Attention Test Score",
-    "short": "Attention Test S…",
-    "category": "cognitive",
-    "unit": "assay- or protocol-dependent",
-    "direction": "context-dependent",
-    "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Attention Test Score is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
-    "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "executive-function-score": {
     "label": "Executive Function Score",
@@ -6037,9 +5860,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Executive Function Score is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Executive Function Score is a functional outcome measured with a defined behavioral, cognitive or sleep assessment. Unlike a single biochemical concentration, its value depends heavily on the exact test, task difficulty, timing and baseline performance.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "processing-speed": {
     "label": "Processing Speed",
@@ -6048,9 +5871,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Processing Speed is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Processing Speed is a measurable biological variable used to characterize cognitive physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "mood-symptom-score": {
     "label": "Mood Symptom Score",
@@ -6059,9 +5882,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Mood Symptom Score is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Mood Symptom Score is a functional outcome measured with a defined behavioral, cognitive or sleep assessment. Unlike a single biochemical concentration, its value depends heavily on the exact test, task difficulty, timing and baseline performance.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "cognitive-test-battery": {
     "label": "Cognitive Test Battery",
@@ -6070,9 +5893,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Cognitive Test Battery is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Cognitive Test Battery is a functional outcome measured with a defined behavioral, cognitive or sleep assessment. Unlike a single biochemical concentration, its value depends heavily on the exact test, task difficulty, timing and baseline performance.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "cognitive-performance-composite": {
     "label": "Cognitive Performance Composite",
@@ -6081,9 +5904,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Cognitive Performance Composite is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Cognitive Performance Composite is a functional outcome measured with a defined behavioral, cognitive or sleep assessment. Unlike a single biochemical concentration, its value depends heavily on the exact test, task difficulty, timing and baseline performance.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "working-memory-score": {
     "label": "Working Memory Score",
@@ -6092,9 +5915,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Working Memory Score is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Working Memory Score is a functional outcome measured with a defined behavioral, cognitive or sleep assessment. Unlike a single biochemical concentration, its value depends heavily on the exact test, task difficulty, timing and baseline performance.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "sustained-attention-score": {
     "label": "Sustained Attention Score",
@@ -6103,9 +5926,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Sustained Attention Score is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Sustained Attention Score is a functional outcome measured with a defined behavioral, cognitive or sleep assessment. Unlike a single biochemical concentration, its value depends heavily on the exact test, task difficulty, timing and baseline performance.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "verbal-learning-score": {
     "label": "Verbal Learning Score",
@@ -6114,9 +5937,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Verbal Learning Score is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Verbal Learning Score is a measurable biological variable used to characterize cognitive physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "visual-memory-score": {
     "label": "Visual Memory Score",
@@ -6125,9 +5948,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Visual Memory Score is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Visual Memory Score is a functional outcome measured with a defined behavioral, cognitive or sleep assessment. Unlike a single biochemical concentration, its value depends heavily on the exact test, task difficulty, timing and baseline performance.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "psychomotor-vigilance": {
     "label": "Psychomotor Vigilance",
@@ -6136,9 +5959,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Psychomotor Vigilance is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Psychomotor Vigilance is a measurable biological variable used to characterize cognitive physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "stroop-test-score": {
     "label": "Stroop Test Score",
@@ -6147,9 +5970,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Stroop Test Score is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Stroop Test Score is a measurable biological variable used to characterize cognitive physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "trail-making-test": {
     "label": "Trail Making Test",
@@ -6158,9 +5981,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Trail Making Test is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Trail Making Test is a measurable biological variable used to characterize cognitive physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "digit-span-score": {
     "label": "Digit Span Score",
@@ -6169,9 +5992,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Digit Span Score is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Digit Span Score is a measurable biological variable used to characterize cognitive physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "subjective-cognitive-complaints": {
     "label": "Subjective Cognitive Complaints",
@@ -6180,9 +6003,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Subjective Cognitive Complaints is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Subjective Cognitive Complaints is a functional outcome measured with a defined behavioral, cognitive or sleep assessment. Unlike a single biochemical concentration, its value depends heavily on the exact test, task difficulty, timing and baseline performance.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "depression-symptom-score": {
     "label": "Depression Symptom Score",
@@ -6191,9 +6014,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Depression Symptom Score is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Depression Symptom Score is a measurable biological variable used to characterize cognitive physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "anxiety-symptom-score": {
     "label": "Anxiety Symptom Score",
@@ -6202,9 +6025,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Anxiety Symptom Score is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Anxiety Symptom Score is a measurable biological variable used to characterize cognitive physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "mental-fatigue-score": {
     "label": "Mental Fatigue Score",
@@ -6213,9 +6036,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Mental Fatigue Score is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Mental Fatigue Score is a measurable biological variable used to characterize cognitive physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "motivation-rating": {
     "label": "Motivation Rating",
@@ -6224,9 +6047,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Motivation Rating is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Motivation Rating is a measurable biological variable used to characterize cognitive physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "alertness-score": {
     "label": "Alertness Score",
@@ -6235,9 +6058,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Alertness Score is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Alertness Score is a functional outcome measured with a defined behavioral, cognitive or sleep assessment. Unlike a single biochemical concentration, its value depends heavily on the exact test, task difficulty, timing and baseline performance.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "sleepiness-score": {
     "label": "Sleepiness Score",
@@ -6246,9 +6069,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Sleepiness Score is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Sleepiness Score is a functional outcome measured with a defined behavioral, cognitive or sleep assessment. Unlike a single biochemical concentration, its value depends heavily on the exact test, task difficulty, timing and baseline performance.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "skin-elasticity": {
     "label": "Skin Elasticity",
@@ -6257,9 +6080,9 @@ export const biomarkers = {
     "unit": "device-specific",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Skin Elasticity is a measurable outcome. Reference intervals and clinical meaning depend on the testing method and context.",
+    "description": "Skin Elasticity is a measurable biological variable used to characterize skin physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as device-specific.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "skin-hydration": {
     "label": "Skin Hydration",
@@ -6268,9 +6091,9 @@ export const biomarkers = {
     "unit": "device-specific",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Skin Hydration is a measurable outcome. Reference intervals and clinical meaning depend on the testing method and context.",
+    "description": "Skin Hydration is a measurable biological variable used to characterize skin physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as device-specific.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "transepidermal-water-loss": {
     "label": "Transepidermal Water Loss",
@@ -6279,9 +6102,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Transepidermal Water Loss is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Transepidermal Water Loss is a measurable biological variable used to characterize skin physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "wrinkle-depth": {
     "label": "Wrinkle Depth",
@@ -6290,9 +6113,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Wrinkle Depth is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Wrinkle Depth is a marker of mineral metabolism or skeletal physiology. It can reflect bone turnover, mineral availability, endocrine control or the structural properties of bone depending on the measurement method.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "hair-density": {
     "label": "Hair Density",
@@ -6301,9 +6124,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Hair Density is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Hair Density is a measurable biological variable used to characterize skin physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "nail-growth-rate": {
     "label": "Nail Growth Rate",
@@ -6312,9 +6135,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Nail Growth Rate is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Nail Growth Rate is a measurable biological variable used to characterize skin physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "skin-pigmentation": {
     "label": "Skin Pigmentation",
@@ -6323,9 +6146,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Skin Pigmentation is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Skin Pigmentation is a measurable biological variable used to characterize skin physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "wrinkle-score": {
     "label": "Wrinkle Score",
@@ -6334,9 +6157,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Wrinkle Score is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Wrinkle Score is a measurable biological variable used to characterize skin physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "skin-carotenoid-status": {
     "label": "Skin Carotenoid Status",
@@ -6345,9 +6168,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Skin Carotenoid Status is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Skin Carotenoid Status is a measurable biological variable used to characterize skin physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "sebum-production": {
     "label": "Sebum Production",
@@ -6356,9 +6179,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Sebum Production is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Sebum Production is a measurable biological variable used to characterize skin physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "skin-barrier-function": {
     "label": "Skin Barrier Function",
@@ -6367,9 +6190,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Skin Barrier Function is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Skin Barrier Function is a measurable biological variable used to characterize skin physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "collagen-density": {
     "label": "Collagen Density",
@@ -6378,9 +6201,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Collagen Density is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Collagen Density is a measurable biological variable used to characterize skin physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "skin-thickness": {
     "label": "Skin Thickness",
@@ -6389,9 +6212,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Skin Thickness is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Skin Thickness is a physiological or exercise-performance measure. It captures a defined aspect of energy metabolism, neuromuscular function or tissue response, and the test protocol determines what the number actually represents.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "acne-lesion-count": {
     "label": "Acne Lesion Count",
@@ -6400,9 +6223,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Acne Lesion Count is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Acne Lesion Count is a measurable biological variable used to characterize skin physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "hair-shedding-rate": {
     "label": "Hair Shedding Rate",
@@ -6411,9 +6234,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Hair Shedding Rate is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Hair Shedding Rate is a measurable biological variable used to characterize skin physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "scalp-hair-diameter": {
     "label": "Scalp Hair Diameter",
@@ -6422,9 +6245,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Scalp Hair Diameter is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Scalp Hair Diameter is a measurable biological variable used to characterize skin physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "skin-redness": {
     "label": "Skin Redness",
@@ -6433,9 +6256,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Skin Redness is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Skin Redness is a measurable biological variable used to characterize skin physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "photoaging-score": {
     "label": "Photoaging Score",
@@ -6444,9 +6267,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Photoaging Score is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Photoaging Score is a measurable biological variable used to characterize skin physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "wound-healing-time": {
     "label": "Wound Healing Time",
@@ -6455,9 +6278,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Wound Healing Time is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Wound Healing Time is a measurable biological variable used to characterize skin physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "skin-surface-ph": {
     "label": "Skin Surface pH",
@@ -6466,9 +6289,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Skin Surface pH is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Skin Surface pH is a measurable biological variable used to characterize skin physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "sperm-concentration": {
     "label": "Sperm Concentration",
@@ -6477,9 +6300,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Sperm Concentration is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Sperm Concentration is a measurable biological variable used to characterize reproductive physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "total-sperm-count": {
     "label": "Total Sperm Count",
@@ -6488,9 +6311,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Total Sperm Count is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Total Sperm Count is a measurable biological variable used to characterize reproductive physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "sperm-motility": {
     "label": "Sperm Motility",
@@ -6499,9 +6322,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Sperm Motility is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Sperm Motility is a measurable biological variable used to characterize reproductive physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "sperm-morphology": {
     "label": "Sperm Morphology",
@@ -6510,9 +6333,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Sperm Morphology is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Sperm Morphology is a measurable biological variable used to characterize reproductive physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "semen-volume": {
     "label": "Semen Volume",
@@ -6521,9 +6344,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Semen Volume is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Semen Volume is a measurable biological variable used to characterize reproductive physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "anti-sperm-antibodies": {
     "label": "Anti-Sperm Antibodies",
@@ -6532,9 +6355,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Anti-Sperm Antibodies is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Anti-Sperm Antibodies is a measurable biological variable used to characterize reproductive physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "ovarian-reserve-panel": {
     "label": "Ovarian Reserve Panel",
@@ -6543,9 +6366,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Ovarian Reserve Panel is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Ovarian Reserve Panel is a measurable biological variable used to characterize reproductive physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "menstrual-cycle-length": {
     "label": "Menstrual Cycle Length",
@@ -6554,9 +6377,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Menstrual Cycle Length is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Menstrual Cycle Length is a measurable biological variable used to characterize reproductive physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "basal-body-temperature": {
     "label": "Basal Body Temperature",
@@ -6565,9 +6388,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Basal Body Temperature is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Basal Body Temperature is a measurable biological variable used to characterize reproductive physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "cervical-mucus-score": {
     "label": "Cervical Mucus Score",
@@ -6576,9 +6399,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Cervical Mucus Score is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Cervical Mucus Score is a measurable biological variable used to characterize reproductive physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "libido-score": {
     "label": "Libido Score",
@@ -6587,9 +6410,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Libido Score is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Libido Score is a measurable biological variable used to characterize reproductive physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "erectile-function-score": {
     "label": "Erectile Function Score",
@@ -6598,9 +6421,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Erectile Function Score is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Erectile Function Score is a measurable biological variable used to characterize reproductive physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "prostate-volume": {
     "label": "Prostate Volume",
@@ -6609,9 +6432,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Prostate Volume is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Prostate Volume is a measurable biological variable used to characterize reproductive physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "testicular-volume": {
     "label": "Testicular Volume",
@@ -6620,9 +6443,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Testicular Volume is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Testicular Volume is a measurable biological variable used to characterize reproductive physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "menopause-symptom-score": {
     "label": "Menopause Symptom Score",
@@ -6631,9 +6454,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Menopause Symptom Score is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Menopause Symptom Score is a measurable biological variable used to characterize reproductive physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "hot-flash-frequency": {
     "label": "Hot Flash Frequency",
@@ -6642,9 +6465,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Hot Flash Frequency is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Hot Flash Frequency is a measurable biological variable used to characterize reproductive physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "ovulation-tracking": {
     "label": "Ovulation Tracking",
@@ -6653,9 +6476,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Ovulation Tracking is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Ovulation Tracking is a physiological or exercise-performance measure. It captures a defined aspect of energy metabolism, neuromuscular function or tissue response, and the test protocol determines what the number actually represents.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "semen-analysis-panel": {
     "label": "Semen Analysis Panel",
@@ -6664,9 +6487,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Semen Analysis Panel is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Semen Analysis Panel is a measurable biological variable used to characterize reproductive physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "sperm-dna-fragmentation": {
     "label": "Sperm DNA Fragmentation",
@@ -6675,9 +6498,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Sperm DNA Fragmentation is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Sperm DNA Fragmentation is a measurable biological variable used to characterize reproductive physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "time-to-pregnancy": {
     "label": "Time to Pregnancy",
@@ -6686,9 +6509,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Time to Pregnancy is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Time to Pregnancy is a measurable biological variable used to characterize reproductive physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "vaccine-antibody-titer": {
     "label": "Vaccine Antibody Titer",
@@ -6697,9 +6520,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Vaccine Antibody Titer is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Vaccine Antibody Titer is a measurable biological variable used to characterize immune physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "secretory-iga": {
     "label": "Secretory IgA",
@@ -6708,9 +6531,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Secretory IgA is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Secretory IgA is a measurable biological variable used to characterize immune physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "lymphocyte-subsets": {
     "label": "Lymphocyte Subsets",
@@ -6719,9 +6542,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Lymphocyte Subsets is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Lymphocyte Subsets is a measurable biological variable used to characterize immune physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "cd4-count": {
     "label": "CD4 Count",
@@ -6730,9 +6553,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "CD4 Count is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "CD4 Count is a measurable biological variable used to characterize immune physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "cd8-count": {
     "label": "CD8 Count",
@@ -6741,9 +6564,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "CD8 Count is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "CD8 Count is a measurable biological variable used to characterize immune physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "cd4-cd8-ratio": {
     "label": "CD4/CD8 Ratio",
@@ -6752,9 +6575,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "CD4/CD8 Ratio is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "CD4/CD8 Ratio is a measurable biological variable used to characterize immune physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "nk-cell-activity": {
     "label": "NK Cell Activity",
@@ -6763,9 +6586,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "NK Cell Activity is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "NK Cell Activity is a measurable biological variable used to characterize immune physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "immunoglobulin-g": {
     "label": "Immunoglobulin G",
@@ -6774,9 +6597,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Immunoglobulin G is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Immunoglobulin G is a measurable biological variable used to characterize immune physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "immunoglobulin-a": {
     "label": "Immunoglobulin A",
@@ -6785,9 +6608,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Immunoglobulin A is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Immunoglobulin A is a measurable biological variable used to characterize immune physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "immunoglobulin-m": {
     "label": "Immunoglobulin M",
@@ -6796,9 +6619,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Immunoglobulin M is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Immunoglobulin M is a measurable biological variable used to characterize immune physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "antibody-response": {
     "label": "Antibody Response",
@@ -6807,9 +6630,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Antibody Response is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Antibody Response is a measurable biological variable used to characterize immune physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "infection-rate": {
     "label": "Infection Rate",
@@ -6818,9 +6641,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Infection Rate is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Infection Rate is a measurable biological variable used to characterize immune physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "vaccine-response": {
     "label": "Vaccine Response",
@@ -6829,9 +6652,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Vaccine Response is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Vaccine Response is a measurable biological variable used to characterize immune physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "immune-marker-panel": {
     "label": "Immune Marker Panel",
@@ -6840,9 +6663,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Immune Marker Panel is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Immune Marker Panel is a measurable biological variable used to characterize immune physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "dental-plaque-index": {
     "label": "Dental Plaque Index",
@@ -6851,9 +6674,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Dental Plaque Index is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Dental Plaque Index is a measurable biological variable used to characterize oral physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "gingival-index": {
     "label": "Gingival Index",
@@ -6862,9 +6685,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Gingival Index is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Gingival Index is a measurable biological variable used to characterize oral physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "salivary-ph": {
     "label": "Salivary pH",
@@ -6873,9 +6696,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Salivary pH is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Salivary pH is a measurable biological variable used to characterize oral physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "salivary-buffering-capacity": {
     "label": "Salivary Buffering Capacity",
@@ -6884,9 +6707,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Salivary Buffering Capacity is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Salivary Buffering Capacity is a measurable biological variable used to characterize oral physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "caries-incidence": {
     "label": "Caries Incidence",
@@ -6895,9 +6718,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Caries Incidence is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Caries Incidence is a measurable biological variable used to characterize oral physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "enamel-mineralization-score": {
     "label": "Enamel Mineralization Score",
@@ -6906,9 +6729,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Enamel Mineralization Score is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Enamel Mineralization Score is a measurable biological variable used to characterize oral physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "periodontal-inflammation-panel": {
     "label": "Periodontal Inflammation Panel",
@@ -6917,9 +6740,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Periodontal Inflammation Panel is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Periodontal Inflammation Panel is a marker associated with inflammatory or immune signaling. It can reflect activation of a particular pathway without identifying the cause, tissue source or clinical significance of that activation.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "blood-lead": {
     "label": "Blood Lead",
@@ -6928,9 +6751,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Blood Lead is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Blood Lead is a measurable biological variable used to characterize toxicology physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "blood-mercury": {
     "label": "Blood Mercury",
@@ -6939,9 +6762,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Blood Mercury is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Blood Mercury is a measurable biological variable used to characterize toxicology physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "urinary-cadmium": {
     "label": "Urinary Cadmium",
@@ -6950,9 +6773,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Urinary Cadmium is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Urinary Cadmium is a measurable biological variable used to characterize toxicology physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "urinary-arsenic": {
     "label": "Urinary Arsenic",
@@ -6961,9 +6784,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Urinary Arsenic is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Urinary Arsenic is a measurable biological variable used to characterize toxicology physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "cotinine": {
     "label": "Cotinine",
@@ -6972,9 +6795,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Cotinine is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Cotinine is a measurable biological variable used to characterize toxicology physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "ethyl-glucuronide": {
     "label": "Ethyl Glucuronide",
@@ -6983,9 +6806,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Ethyl Glucuronide is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Ethyl Glucuronide is a measurable biological variable used to characterize toxicology physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "urinary-caffeine-metabolites": {
     "label": "Urinary Caffeine Metabolites",
@@ -6994,9 +6817,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Urinary Caffeine Metabolites is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Urinary Caffeine Metabolites is a measurable biological variable used to characterize toxicology physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "drug-metabolite-profile": {
     "label": "Drug Metabolite Profile",
@@ -7005,9 +6828,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Drug Metabolite Profile is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Drug Metabolite Profile is a measurable biological variable used to characterize toxicology physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "blood-alcohol": {
     "label": "Blood Alcohol",
@@ -7016,9 +6839,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Blood Alcohol is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Blood Alcohol is a measurable biological variable used to characterize toxicology physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "heavy-metal-exposure-panel": {
     "label": "Heavy Metal Exposure Panel",
@@ -7027,9 +6850,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Heavy Metal Exposure Panel is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Heavy Metal Exposure Panel is a measurable biological variable used to characterize toxicology physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "urinary-bisphenol-a": {
     "label": "Urinary Bisphenol A",
@@ -7038,9 +6861,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Urinary Bisphenol A is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Urinary Bisphenol A is a measurable biological variable used to characterize toxicology physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "phthalate-metabolites": {
     "label": "Phthalate Metabolites",
@@ -7049,9 +6872,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Phthalate Metabolites is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Phthalate Metabolites is a measurable biological variable used to characterize toxicology physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "persistent-organic-pollutants": {
     "label": "Persistent Organic Pollutants",
@@ -7060,9 +6883,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Persistent Organic Pollutants is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Persistent Organic Pollutants is a measurable biological variable used to characterize toxicology physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "urinary-glyphosate": {
     "label": "Urinary Glyphosate",
@@ -7071,9 +6894,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Urinary Glyphosate is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Urinary Glyphosate is a measurable biological variable used to characterize toxicology physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "carbon-monoxide-exposure": {
     "label": "Carbon Monoxide Exposure",
@@ -7082,9 +6905,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Carbon Monoxide Exposure is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Carbon Monoxide Exposure is a measurable biological variable used to characterize toxicology physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "carboxyhemoglobin": {
     "label": "Carboxyhemoglobin",
@@ -7093,9 +6916,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Carboxyhemoglobin is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Carboxyhemoglobin is a measurable biological variable used to characterize toxicology physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "apoe-genotype": {
     "label": "APOE Genotype",
@@ -7104,9 +6927,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "APOE Genotype is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "APOE Genotype is a measurable biological variable used to characterize genetic physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "mthfr-genotype": {
     "label": "MTHFR Genotype",
@@ -7115,9 +6938,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "MTHFR Genotype is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "MTHFR Genotype is a measurable biological variable used to characterize genetic physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "cyp2d6-genotype": {
     "label": "CYP2D6 Genotype",
@@ -7126,9 +6949,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "CYP2D6 Genotype is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "CYP2D6 Genotype is a measurable biological variable used to characterize genetic physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "cyp2c19-genotype": {
     "label": "CYP2C19 Genotype",
@@ -7137,9 +6960,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "CYP2C19 Genotype is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "CYP2C19 Genotype is a measurable biological variable used to characterize genetic physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "cyp1a2-genotype": {
     "label": "CYP1A2 Genotype",
@@ -7148,9 +6971,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "CYP1A2 Genotype is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "CYP1A2 Genotype is a measurable biological variable used to characterize genetic physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "hfe-genotype": {
     "label": "HFE Genotype",
@@ -7159,9 +6982,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "HFE Genotype is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "HFE Genotype is a measurable biological variable used to characterize genetic physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "lpa-genotype": {
     "label": "LPA Genotype",
@@ -7170,9 +6993,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "LPA Genotype is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "LPA Genotype is a measurable biological variable used to characterize genetic physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "polygenic-risk-score": {
     "label": "Polygenic Risk Score",
@@ -7181,9 +7004,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Polygenic Risk Score is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Polygenic Risk Score is a measurable biological variable used to characterize genetic physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "pharmacogenomic-profile": {
     "label": "Pharmacogenomic Profile",
@@ -7192,9 +7015,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Pharmacogenomic Profile is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Pharmacogenomic Profile is a measurable biological variable used to characterize genetic physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "lactase-persistence-genotype": {
     "label": "Lactase Persistence Genotype",
@@ -7203,9 +7026,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Lactase Persistence Genotype is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Lactase Persistence Genotype is a measurable biological variable used to characterize genetic physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "aldh2-genotype": {
     "label": "ALDH2 Genotype",
@@ -7214,9 +7037,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "ALDH2 Genotype is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "ALDH2 Genotype is a measurable biological variable used to characterize genetic physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "comt-genotype": {
     "label": "COMT Genotype",
@@ -7225,9 +7048,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "COMT Genotype is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "COMT Genotype is a measurable biological variable used to characterize genetic physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "fto-genotype": {
     "label": "FTO Genotype",
@@ -7236,9 +7059,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "FTO Genotype is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "FTO Genotype is a measurable biological variable used to characterize genetic physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "tcf7l2-genotype": {
     "label": "TCF7L2 Genotype",
@@ -7247,9 +7070,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "TCF7L2 Genotype is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "TCF7L2 Genotype is a measurable biological variable used to characterize genetic physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "rbc-fatty-acid-profile": {
     "label": "RBC Fatty Acid Profile",
@@ -7258,9 +7081,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "RBC Fatty Acid Profile is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "RBC Fatty Acid Profile is a measurable biological variable used to characterize fatty-acid physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "linoleic-acid": {
     "label": "Linoleic Acid",
@@ -7269,9 +7092,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Linoleic Acid is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Linoleic Acid is a measurable biological variable used to characterize fatty-acid physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "oleic-acid": {
     "label": "Oleic Acid",
@@ -7280,9 +7103,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Oleic Acid is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Oleic Acid is a measurable biological variable used to characterize fatty-acid physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "palmitoleic-acid": {
     "label": "Palmitoleic Acid",
@@ -7291,9 +7114,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Palmitoleic Acid is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Palmitoleic Acid is a measurable biological variable used to characterize fatty-acid physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "arachidonic-acid": {
     "label": "Arachidonic Acid",
@@ -7302,9 +7125,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Arachidonic Acid is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Arachidonic Acid is a measurable biological variable used to characterize fatty-acid physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "epa": {
     "label": "EPA",
@@ -7313,9 +7136,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "EPA is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "EPA is a measurable biological variable used to characterize fatty-acid physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "dha": {
     "label": "DHA",
@@ -7324,9 +7147,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "DHA is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "DHA is a measurable biological variable used to characterize fatty-acid physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "alpha-linolenic-acid": {
     "label": "Alpha-Linolenic Acid",
@@ -7335,9 +7158,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Alpha-Linolenic Acid is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Alpha-Linolenic Acid is a measurable biological variable used to characterize fatty-acid physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "gamma-linolenic-acid": {
     "label": "Gamma-Linolenic Acid",
@@ -7346,9 +7169,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Gamma-Linolenic Acid is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Gamma-Linolenic Acid is a measurable biological variable used to characterize fatty-acid physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "trans-fatty-acids": {
     "label": "Trans Fatty Acids",
@@ -7357,9 +7180,9 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Trans Fatty Acids is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Trans Fatty Acids is a measurable biological variable used to characterize fatty-acid physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   },
   "oxylipin-profile": {
     "label": "Oxylipin Profile",
@@ -7368,31 +7191,8 @@ export const biomarkers = {
     "unit": "assay- or protocol-dependent",
     "direction": "context-dependent",
     "normalRange": "Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
-    "description": "Oxylipin Profile is a measurable laboratory, physiological or patient-reported outcome. The appropriate interpretation depends on method, population and clinical context.",
+    "description": "Oxylipin Profile is a measurable biological variable used to characterize fatty-acid physiology. The result is meaningful only in relation to the assay or measurement method, sampling conditions and biological context.\n\nWhat it tells you: the useful interpretation is not simply whether the value is high or low, but what biological process the measurement represents and whether the direction of change is desirable for the specific question. The database classifies this marker as context dependent and records the measurement unit as assay- or protocol-dependent.\n\nReference values are method- and population-dependent. Use the reference interval supplied by the testing laboratory; interpretation depends on context.",
     "sources": [],
-    "reviewStatus": "needs-review"
+    "reviewStatus": "editorial-draft"
   }
-};
-
-export const biomarkerCategories = {
-  hormonal: { label: 'Hormonal', order: 1 }, metabolic: { label: 'Metabolic', order: 2 },
-  'body-comp': { label: 'Body Composition', order: 3 }, performance: { label: 'Performance', order: 4 },
-  inflammation: { label: 'Inflammation', order: 5 }, cardio: { label: 'Cardiovascular', order: 6 },
-  recovery: { label: 'Recovery & Stress', order: 7 }, cognitive: { label: 'Cognitive', order: 8 },
-  skin: { label: 'Skin', order: 9 }, hematology: { label: 'Hematology', order: 10 },
-  liver: { label: 'Liver', order: 11 }, kidney: { label: 'Kidney', order: 12 },
-  electrolyte: { label: 'Electrolytes', order: 13 }, vitamin: { label: 'Vitamins', order: 14 },
-  mineral: { label: 'Minerals', order: 15 }, thyroid: { label: 'Thyroid', order: 16 },
-  bone: { label: 'Bone', order: 17 }, nutrition: { label: 'Nutrition', order: 18 },
-  hydration: { label: 'Hydration', order: 19 }, redox: { label: 'Redox & Oxidative Stress', order: 20 },
-  gut: { label: 'Gut & Microbiome', order: 21 }, reproductive: { label: 'Reproductive', order: 22 },
-  immune: { label: 'Immune', order: 23 }, oral: { label: 'Oral Health', order: 24 },
-  toxicology: { label: 'Toxicology & Exposure', order: 25 }, genetic: { label: 'Genetics', order: 26 },
-  'fatty-acid': { label: 'Fatty Acids', order: 27 },
-};
-export function biomarkersByCategory(category) {
-  return Object.entries(biomarkers).filter(([,x]) => x.category === category).map(([slug,x]) => ({ slug, ...x }));
-}
-export function biomarkersForMechanism(mechanism) {
-  return (mechanism.biomarkers || []).map((slug) => biomarkers[slug] ? { slug, ...biomarkers[slug] } : null).filter(Boolean);
 }

@@ -73,6 +73,7 @@ export function IngredientPage({
   slug,
   ingredient,
   mechanisms = [],
+  biomarkers = [],
   stacks = [],
 }) {
   const evidence = ingredient.evidenceLevel || 'unrated'
@@ -81,8 +82,6 @@ export function IngredientPage({
 
   const forms = ingredient.forms || []
   const sources = ingredient.sources || ingredient.references || []
-  const safetyNotes = ingredient.safetyNotes || []
-  const cautions = ingredient.cautions || []
 
   return (
     <>
@@ -122,8 +121,10 @@ export function IngredientPage({
                 )}
 
               <p className="hero-copy ip-description">
-                {ingredient.description ||
-                  'A detailed description for this ingredient has not yet been added.'}
+                {(ingredient.description ||
+                  'A detailed description for this ingredient has not yet been added.').split('\n\n').map((paragraph, i) => (
+                    <span key={i} className="ip-description-paragraph">{paragraph}</span>
+                  ))}
               </p>
 
               <div className="ip-quick-facts">
@@ -146,14 +147,15 @@ export function IngredientPage({
                   <span>AVAILABLE FORMS</span>
                   <strong>{forms.length}</strong>
                 </div>
+
+                {ingredient.typicalIntake && (
+                  <div className="ip-fact ip-fact-wide">
+                    <span>TYPICAL INTAKE</span>
+                    <strong>{ingredient.typicalIntake}</strong>
+                  </div>
+                )}
               </div>
 
-              <p className="ip-evidence-note">
-                This classification is inherited from the current
-                database. It is not an independent clinical
-                recommendation or a guarantee that this ingredient
-                works for every intended use.
-              </p>
             </div>
 
             <aside className="ip-side-panel">
@@ -161,7 +163,6 @@ export function IngredientPage({
 
               <a href="#forms">Available forms</a>
               <a href="#mechanisms">Biological pathways</a>
-              <a href="#safety">Safety & limitations</a>
               <a href="#research">Research & references</a>
               <a href="#related-stacks">Related stacks</a>
 
@@ -214,7 +215,7 @@ export function IngredientPage({
           <Reveal>
             <div className="ip-heading">
               <div className="ix-eyebrow">02 / BIOLOGY</div>
-              <h2>Biological <span>pathways.</span></h2>
+              <h2>How it <br /><span>works.</span></h2>
               <p>
                 These links describe pathways associated with this
                 ingredient in the current database. A mechanistic
@@ -263,65 +264,42 @@ export function IngredientPage({
         </div>
       </section>
 
-      <section id="safety" className="ip-section">
-        <div className="container">
-          <Reveal>
-            <div className="ip-heading">
-              <div className="ix-eyebrow">03 / LIMITATIONS</div>
-              <h2>Safety & <span>limitations.</span></h2>
-              <p>
-                Safety depends on the ingredient, dose, formulation,
-                individual circumstances and other substances used.
-              </p>
-            </div>
-          </Reveal>
-
-          <div className="ip-safety-panel">
-            <div className="ip-safety-icon" aria-hidden="true">
-              !
-            </div>
-
-            <div>
-              <h3>Review safety before use</h3>
-
-              <p>
-                This entry does not provide a personalized dosage
-                or determine whether an ingredient is appropriate
-                for a particular person. Check authoritative safety
-                information and consult a qualified healthcare
-                professional when necessary.
-              </p>
-
-              {safetyNotes.length > 0 ||
-              cautions.length > 0 ? (
-                <ul>
-                  {[...safetyNotes, ...cautions].map(
-                    (note, index) => (
-                      <li key={`${index}-${note}`}>
-                        {typeof note === 'string'
-                          ? note
-                          : note.text || note.description || ''}
-                      </li>
-                    )
-                  )}
-                </ul>
-              ) : (
-                <p className="ip-missing-data">
-                  Ingredient-specific safety notes have not yet
-                  been documented in the database. This does not
-                  mean the ingredient is free of risks.
+      {biomarkers.length > 0 && (
+        <section id="biomarkers" className="ip-section">
+          <div className="container">
+            <Reveal>
+              <div className="ip-heading">
+                <div className="ix-eyebrow">03 / MEASURABLE</div>
+                <h2>Linked <span>biomarkers.</span></h2>
+                <p>
+                  These are measurable variables connected to the pathways mapped for this ingredient.
                 </p>
-              )}
+              </div>
+            </Reveal>
+            <div className="bio-grid">
+              {biomarkers.map((b) => (
+                <Reveal key={b.slug}>
+                  <a className="bio-card" href={`/biomarkers/${b.slug}/`}>
+                    <div className={'bio-direction dir-' + b.direction}>
+                      {b.direction === 'higher-better' && '↑'}
+                      {b.direction === 'lower-better' && '↓'}
+                      {b.direction === 'target-range' && '↔'}
+                    </div>
+                    <div className="bio-label">{b.label}</div>
+                    <div className="bio-unit">{b.unit}</div>
+                  </a>
+                </Reveal>
+              ))}
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       <section id="research" className="ip-section">
         <div className="container">
           <Reveal>
             <div className="ip-heading">
-              <div className="ix-eyebrow">04 / SOURCES</div>
+              <div className="ix-eyebrow">03 / SOURCES</div>
               <h2>Research & <span>references.</span></h2>
               <p>
                 Sources should support specific claims, not simply
@@ -368,12 +346,11 @@ export function IngredientPage({
         <div className="container">
           <Reveal>
             <div className="ip-heading">
-              <div className="ix-eyebrow">05 / CONNECTIONS</div>
+              <div className="ix-eyebrow">04 / CONNECTIONS</div>
               <h2>Related <span>stacks.</span></h2>
               <p>
-                These combinations include this ingredient in the
-                current database. Inclusion does not establish
-                that the combination is synergistic or safe.
+                These combinations include this ingredient in the current database.
+                Use the linked evidence record to inspect the specific combination.
               </p>
             </div>
           </Reveal>
@@ -412,6 +389,20 @@ export function IngredientPage({
               <a href="/stacks/">Explore all stacks ↗</a>
             </div>
           )}
+        </div>
+      </section>
+
+      <section className="ip-final">
+        <div className="container">
+          <div className="ip-final-card">
+            <div className="ip-eyebrow">KEEP EXPLORING</div>
+            <h2>Follow the <span>evidence.</span></h2>
+            <p>Explore the linked pathways and combinations, and check the underlying research before drawing conclusions.</p>
+            <div className="ip-final-links">
+              <a href="/ingredients/">All ingredients ↗</a>
+              <a href="/stacks/">Explore stacks ↗</a>
+            </div>
+          </div>
         </div>
       </section>
     </>

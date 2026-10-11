@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation'
 import { ingredients } from '../../data/ingredients'
 import { mechanisms } from '../../data/mechanisms'
+import { biomarkers } from '../../data/biomarkers'
 import { stacks } from '../../data/stacks'
 import { IngredientPage } from '../../components/IngredientPage'
 
@@ -29,6 +30,15 @@ export default async function IngredientRoute({ params }) {
     .filter(Boolean)
 
   // Find stacks that include this ingredient
+  const relatedBiomarkers = []
+  for (const mechanism of affectedMechanisms) {
+    for (const bSlug of mechanism.biomarkers || []) {
+      if (!relatedBiomarkers.some((b) => b.slug === bSlug) && biomarkers[bSlug]) {
+        relatedBiomarkers.push({ slug: bSlug, ...biomarkers[bSlug] })
+      }
+    }
+  }
+
   const relatedStacks = Object.entries(stacks)
     .filter(([_, s]) => (s.tags?.ingredients || []).includes(slug))
     .map(([stackSlug, s]) => ({
@@ -45,6 +55,7 @@ export default async function IngredientRoute({ params }) {
       slug={slug}
       ingredient={ing}
       mechanisms={affectedMechanisms}
+      biomarkers={relatedBiomarkers}
       stacks={relatedStacks}
     />
   )

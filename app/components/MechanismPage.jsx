@@ -49,8 +49,10 @@ export function MechanismPage({
               )}
 
               <p className="hero-copy ip-description">
-                {mechanism.description ||
-                  'A description for this pathway has not yet been added.'}
+                {(mechanism.description ||
+                  'A description for this pathway has not yet been added.').split('\n\n').map((paragraph, i) => (
+                    <span key={i} className="ip-description-paragraph">{paragraph}</span>
+                  ))}
               </p>
 
               {mechanism.evidenceNote && (

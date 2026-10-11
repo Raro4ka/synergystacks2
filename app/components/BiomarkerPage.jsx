@@ -31,7 +31,7 @@ export function BiomarkerPage({ slug, biomarker, mechanisms, ingredients }) {
               <h1 style={{ fontSize: 'clamp(40px,6.5vw,84px)' }}>
                 <span className="line"><span>{biomarker.label}</span></span>
               </h1>
-              <p className="hero-copy">{biomarker.description}</p>
+              <div className="hero-copy">{(biomarker.description || '').split('\n\n').map((paragraph, i) => <p key={i}>{paragraph}</p>)}</div>
 
               <div className="ing-quick-facts">
                 <div className="ing-fact">

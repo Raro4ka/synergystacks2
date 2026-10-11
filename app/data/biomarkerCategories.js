@@ -1,0 +1,16 @@
+export const biomarkerCategories = {
+  hormonal: { label: 'Hormonal', order: 1 }, metabolic: { label: 'Metabolic', order: 2 },
+  'body-comp': { label: 'Body Composition', order: 3 }, performance: { label: 'Performance', order: 4 },
+  inflammation: { label: 'Inflammation', order: 5 }, cardio: { label: 'Cardiovascular', order: 6 },
+  recovery: { label: 'Recovery & Stress', order: 7 }, cognitive: { label: 'Cognitive', order: 8 },
+  skin: { label: 'Skin', order: 9 }, hematology: { label: 'Hematology', order: 10 },
+  liver: { label: 'Liver', order: 11 }, kidney: { label: 'Kidney', order: 12 },
+  electrolyte: { label: 'Electrolytes', order: 13 }, vitamin: { label: 'Vitamins', order: 14 },
+  mineral: { label: 'Minerals', order: 15 }, thyroid: { label: 'Thyroid', order: 16 },
+  bone: { label: 'Bone', order: 17 }, nutrition: { label: 'Nutrition', order: 18 },
+  hydration: { label: 'Hydration', order: 19 }, redox: { label: 'Redox & Oxidative Stress', order: 20 },
+  gut: { label: 'Gut & Microbiome', order: 21 }, reproductive: { label: 'Reproductive', order: 22 },
+  immune: { label: 'Immune', order: 23 }, oral: { label: 'Oral Health', order: 24 },
+  toxicology: { label: 'Toxicology & Exposure', order: 25 }, genetic: { label: 'Genetics', order: 26 },
+  'fatty-acid': { label: 'Fatty Acids', order: 27 },
+};
